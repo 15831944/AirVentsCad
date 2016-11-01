@@ -1,0 +1,15 @@
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\bin\Debug\MakeDxfSw.exe
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\bin\Debug\MakeDxfSw.pdb
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxfSw.csprojResolveAssemblyReference.cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MainWindow.g.cs
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\App.g.cs
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxfSw_MarkupCompile.cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxfSw_MarkupCompile.lref
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MainWindow.baml
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxfSw.g.resources
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxfSw.Properties.Resources.resources
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxfSw.csproj.GenerateResource.Cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxfSw.exe
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxfSw.pdb
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxf.g.cs
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfSw\MakeDxfSw\obj\Debug\MakeDxf.baml

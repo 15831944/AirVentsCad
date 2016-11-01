@@ -1,0 +1,6 @@
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestSql\TestSql\bin\Debug\TestSql.exe.config
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestSql\TestSql\bin\Debug\TestSql.exe
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestSql\TestSql\bin\Debug\TestSql.pdb
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestSql\TestSql\obj\Debug\TestSql.csprojResolveAssemblyReference.cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestSql\TestSql\obj\Debug\TestSql.exe
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestSql\TestSql\obj\Debug\TestSql.pdb

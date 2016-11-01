@@ -1,0 +1,2175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AirVentsCad</name>
+    </assembly>
+    <members>
+        <member name="T:AirVentsCadWpf.AdminkaWindows.Adminka">
+            <summary>
+            Interaction logic for Adminka.xaml
+            </summary>
+            
+            <summary>
+            Adminka
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AdminkaWindows.Adminka.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AdminkaWindows.SettingsW">
+            <summary>
+            Interaction logic for SettingsW.xaml
+            </summary>
+            <summary>
+            SettingsW
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AdminkaWindows.SettingsW.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AdminkaWindows.SettingsW.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AdminkaWindows.GroupUserControl">
+            <summary>
+            Interaction logic for GroupUserControl.xaml
+            </summary>
+            
+            <summary>
+            GroupUserControl
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AdminkaWindows.GroupUserControl.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.SqlBaseData">
+            <summary>
+            Класс реализующий работу с базой данных
+            </summary>
+            <summary>
+            Класс реализующий работу с базой данных
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.StandartSize2(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sizeId"></param>
+            <param name="profilId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AirVents_SetPDMID(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="typeOfFile"></param>
+            <param name="idPdm"></param>
+            <param name="part"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.PanelTypeId(System.String)">
+            <summary>
+            Panels the type identifier.
+            </summary>
+            <param name="panelTypeCode">The panel type code.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AirVents_AddPanelFull(System.Data.DataTable)">
+            <summary>
+            
+            </summary>
+            <param name="tableParams"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AirVents_AddPartOfPanel(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Nullable{System.Int32},System.Nullable{System.Double},System.Nullable{System.Boolean},System.String,System.String,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            Airs the vents_ add part of panel.
+            </summary>
+            <param name="panelTypeId">Name of the panel type.</param>
+            <param name="elementType">Type of the element.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <param name="partThick">The part thick.</param>
+            <param name="partMat">The part mat.</param>
+            <param name="partMatThick">The part mat thick.</param>
+            <param name="mirror">The mirror.</param>
+            <param name="step">The step.</param>
+            <param name="stepInsertion">The step insertion.</param>
+            <param name="reinforcing">if set to <c>true</c> [reinforcing].</param>
+            <param name="stickyTape">if set to <c>true</c> [sticky tape].</param>
+            <param name="airHole"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.PanelNumber">
+            <summary>
+            Panels the asm identifier.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AirVents_AddPanel(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Boolean},System.String,System.String,System.Boolean,System.Boolean,System.String,System.Int32)">
+            <summary>
+            Airs the vents_ add panel.
+            </summary>
+            <param name="partId">The part identifier.</param>
+            <param name="panelTypeId">Name of the panel type.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <param name="panelMatOut">The panel mat out.</param>
+            <param name="panelMatIn">The panel mat in.</param>
+            <param name="panelThick">The panel thick.</param>
+            <param name="panelMatThickOut">The panel mat thick out.</param>
+            <param name="panelMatThickIn">The panel mat thick in.</param>
+            <param name="mirror">The mirror.</param>
+            <param name="step">The step.</param>
+            <param name="stepInsertion">The step insertion.</param>
+            <param name="reinforcing01">if set to <c>true</c> [reinforcing01].</param>
+            <param name="stickyTape">if set to <c>true</c> [sticky tape].</param>
+            <param name="airHole"></param>
+            <param name="panelNumber">The panel number.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AirVents_AddPanelAsm(System.Collections.Generic.List{System.Int32},System.Int32@)">
+            <summary>
+            Airs the vents_ add panel asm.
+            </summary>
+            <param name="partIds">The part ids.</param>
+            <param name="partId">The part identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AirVents_AddPanel2(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Double},System.Nullable{System.Double},System.String,System.String,System.Nullable{System.Boolean},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Boolean},System.String,System.String,System.String)">
+            <summary>
+            Добавление панели или ее элемента в базу.
+            </summary>
+            <param name="panelTypeId">Имя типа панели</param><example>Ножки опорные</example>
+            <param name="elementType">Номер типа элемента</param><example>0 - Сборка, 1 - Внешняя панель</example>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <param name="thickness">The partThick.</param>
+            <param name="matOut">The mat out.</param>
+            <param name="matInt">The mat int.</param>
+            <param name="thicknessOut">The partThick out.</param>
+            <param name="thicknessInt">The partThick int.</param>
+            <param name="soundIns">The sound ins.</param>
+            <param name="stickyTape">The sticky tape.</param>
+            <param name="reinforcing01">The reinforcing01.</param>
+            <param name="ral">The ral.</param>
+            <param name="coatingType">Type of the coating.</param>
+            <param name="coatingClass">The coating class.</param>
+            <param name="mirror">The mirror.</param>
+            <param name="step">The step.</param>
+            <param name="stepInsertion">The step insertion.</param>
+            <param name="airHole"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.PanelsTable(System.String)">
+            <summary>
+            Panelses the table.
+            </summary>
+            <param name="panelGroup">The panel group.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.PanelsTable2(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="panelGroup"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.PanelsTypeId(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="panelTypeCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.PanelsTable">
+            <summary>
+            Panelses the table.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.MaterialsTable">
+            <summary>
+            Materialses the table.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.MaterialsForMontageFrame">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.MaterialsTable(System.String)">
+            <summary>
+            Таблица свойств материалов, возвращаемая из базы
+            </summary>
+            <param name="material">The material - имя или код материал по базе</param>
+            <returns> DataTable</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.FiltersTable(System.String)">
+            <summary>
+            Filterses the table.
+            </summary>
+            <param name="sizeType">Type of the size.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AirVentsStandardSize">
+            <summary>
+            Table of standard sizes.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.HeatersTable(System.String)">
+            <summary>
+            Heaterses the table.
+            </summary>
+            <param name="sizeType">Type of the size.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.StandartSize(System.String)">
+            <summary>
+            Возвращает стандарнтое сечение для установки
+            </summary>
+            <param name="panelTypeCode">типоразмер установки</param>
+            <returns>Ширина, Высота</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.PartTechParams">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.StandartSize(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sizeId"></param>
+            <param name="profilId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.BendTable(System.String)">
+            <summary>
+            Параметры гибки листового металла 
+            </summary>
+            <param name="thikness">толщина материала</param>
+            <returns>Радиус гиба, Kfactor </returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AddUserToSqlBase(System.String,System.String)">
+            <summary>
+            Добавляет пользователя в базу SQL.
+            </summary>
+            <param name="userName">Имя пользователя</param>
+            <param name="fullName">Полное имя пользователя</param>
+            <returns>true - если успешно</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.DelUserFromSqlBase(System.String)">
+            <summary>
+            Удаляет пользователя из базы SQL.
+            </summary>
+            <param name="userName">Имя пользователя</param>
+            <returns>true - если успешно</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AddGroupToSqlBase(System.String,System.String)">
+            <summary>
+            Добавление группы в базу SQL.
+            </summary>
+            <param name="groupname">Имя группы.</param>
+            <param name="description">Описание группы.</param>
+            <returns>true - если успешно</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AddUserToGroupInSqlBase(System.String,System.String,System.String)">
+            <summary>
+            Добавление пользователя в группу быазы SQL.
+            </summary>
+            <param name="userName">Имя пользователя.</param>
+            <param name="fullName">Полное имя пользователя.</param>
+            <param name="groupname">Имя группы.</param>
+            <returns>true - если успешно</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.AddUserInSqlBase(System.String,System.String)">
+            <summary>
+            Adds the user in SQL base.
+            </summary>
+            <param name="userName">Name of the user.</param>
+            <param name="fullName">The full name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.DeleteUserFromGroup(System.String,System.String)">
+            <summary>
+            Удаление пользователя из группы SQL.
+            </summary>
+            <param name="userName">Имя пользователя.</param>
+            <param name="groupname">Имя группы.</param>
+            <returns>true - если успешно</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.DeleteGroupToSqlBase(System.String)">
+            <summary>
+            Удаление группы из базы SQL.
+            </summary>
+            <param name="groupname">Имя группы.</param>
+            <returns>true - если успешно</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.GroupsTable">
+            <summary>
+            Таблица с группамы из базы SQL.
+            </summary>
+            <returns>Таблица с группамы из базы SQL.</returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.SqlBaseData.GroupUsers(System.String)">
+            <summary>
+            Таблица с группамы из базы SQL.
+            </summary>
+            <param name="groupname">Имя группы.</param>
+            <returns>Таблица с группамы из базы SQL.</returns>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw">
+            <summary>
+            
+            </summary>
+            <summary>
+            Класс для генерации блоков и элементов установок в SolidWorks
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.SpigotFolder">
+            <summary>
+             Папка с исходной моделью "Вибровставки". 
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.SpigotDestinationFolder">
+            <summary>
+             Папка для сохранения компонентов "Вибровставки". 
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.DamperFolder">
+            <summary>
+            Папка с исходной моделью "Регулятора расхода воздуха". 
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.DamperDestinationFolder">
+            <summary>
+            Папка для сохранения компонентов "Регулятора расхода воздуха". 
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.RoofFolder">
+            <summary>
+            Папка с исходной моделью "Крыши".
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.RoofDestinationFolder">
+            <summary>
+            Папка для сохранения компонентов "Крыши". 
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Lono">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Dumper(System.String,System.String,System.String,System.Boolean,System.String[])">
+            <summary>
+            Метод по генерации "Регулятора расхода воздуха"
+            </summary>
+            <param name="type">тип регулятора заслонки</param>
+            <param name="width">ширина заслонки</param>
+            <param name="height">высота заслонки</param>
+            <param name="isOutDoor"></param>
+            <param name="material"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.DumperS(System.String,System.String,System.String,System.Boolean,System.String[])">
+            <summary>
+            Dumpers the s.
+            </summary>
+            <param name="typeOfFlange">The typeOfFlange.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <param name="isOutDoor"></param>
+            <param name="material"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Spigot(System.String,System.String,System.String)">
+            <summary>
+            Метод по генерации модели вибровставки
+            </summary>
+            <param name="type">тип вибровставки</param>
+            <param name="width">ширина вибровставки</param>
+            <param name="height">высота вибровставки</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.SpigotStr(System.String,System.String,System.String)">
+            <summary>
+            Spigots the string.
+            </summary>
+            <param name="type">The typeOfFlange.</param>
+            <param name="width">The width.</param>
+            <param name="height">The height.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Roof(System.String,System.String,System.String)">
+            <summary>
+            Метод по генерации модели "Крыши"
+            </summary>
+            <param name="type">тип крыши</param>
+            <param name="width">ширина крыши</param>
+            <param name="lenght">высота крыши</param>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FrameLessFolder">
+            <summary>
+             Папка с исходной моделью "Панель бескаркасной установки". 
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.UnitFramelessOreders">
+            <summary>
+            The unit frameless oreders
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BackPanelConfig(System.Double,System.Double,System.Double,System.Double,System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="byWidth"></param>
+            <param name="byHeight"></param>
+            <param name="flange30"></param>
+            <param name="nemberPanel"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Lenght">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.GetInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Planel1Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Planel2Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Planel3Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.DimO1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.DimO2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.DimO3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.PlanelCentrDoor1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.PlanelCentrDoor2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.PlanelCentrDoor3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Profil1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Profil2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Profil3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.Profil4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.ProfilCentr1">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.ProfilCentr2">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.ProfilCentr3">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions.ProfilCentr4">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessBlock(System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String,System.String[],System.String[],AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions,System.String[])">
+            <summary>
+            Framelesses the block.
+            </summary>
+            <param name="size">The size.</param>
+            <param name="order">The order.</param>
+            <param name="leftSide">The side.</param>
+            <param name="section">The section.</param>
+            <param name="pDown">The p down.</param>
+            <param name="pFixed">The p fixed.</param>
+            <param name="pUp">The p up.</param>
+            <param name="съемныеПанели">The СЪЕМНЫЕ ПАНЕЛИ.</param>
+            <param name="промежуточныеСтойки">The ПРОМЕЖУТОЧНЫЕ СТОЙКИ.</param>
+            <param name="dimensions">The height.</param>
+            <param name="троцевыеПанели"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessBlockStr(System.String,System.String,System.Boolean,System.String,System.String,System.String,System.String,System.String[],System.String[],AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BlockDimensions,System.String[])">
+            <summary>
+            Framelesses the block string.
+            </summary>
+            <param name="size">The size.</param>
+            <param name="order">The order.</param>
+            <param name="leftSide">The side.</param>
+            <param name="section">The section.</param>
+            <param name="панельНижняя">The p down.</param>
+            <param name="панельНесъемная">The p fixed.</param>
+            <param name="панельВерхняя">The p up.</param>
+            <param name="панелиСъемные">The ПАНЕЛИ СЪЕМНЫЕ.</param>
+            <param name="промежуточныеСтойки">The ПРОМЕЖУТОЧНЫЕ СТОЙКИ.</param>
+            <param name="dimensions"></param>
+            <param name="троцевыеПанели"></param>
+            <returns></returns>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.NewComponentsFull">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.PanelsFrameless(System.String[],System.String,System.String,System.String[],System.String[],System.Boolean,System.Boolean,System.String,System.String,System.String[],System.String,System.String[],System.String,AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts}@,System.Boolean)">
+            <summary>
+            Panelses the frameless.
+            </summary>
+            <param name="typeOfPanel">The type of panel.</param>
+            <param name="width">The width.</param>
+            <param name="height">The lenght.</param>
+            <param name="materialP1">The material p1.</param>
+            <param name="materialP2">The meterial p2.</param>
+            <param name="скотч">if set to <c>true</c> [СКОТЧ].</param>
+            <param name="усиление">if set to <c>true</c> [УСИЛЕНИЕ].</param>
+            <param name="config">The configuration.</param>
+            <param name="расположениеПанелей">The РАСПОЛОЖЕНИЕ ПАНЕЛЕЙ.</param>
+            <param name="покрытие">The ПОКРЫТИЕ.</param>
+            <param name="расположениеВставок">The РАСПОЛОЖЕНИЕ ВСТАВОК.</param>
+            <param name="первыйТип">The СОСТАВНАЯ.</param>
+            <param name="типТорцевой"></param>
+            <param name="screws"></param>
+            <param name="partsToDeleteList"></param>
+            <param name="existingAsmsAndParts"></param>
+            <param name="onlySearch"></param>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.PartsToDeleteList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.DeleteAllPartsToDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts.IdAsm">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts.Comment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts.PartName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts.PartQuery">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts.PartPath">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts.GetPath(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="partName"></param>
+            <param name="vaultName"></param>
+            <returns></returns>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts.ExistInSistem">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.GetExistingFile(System.String,System.String@,System.Int32@,System.Int32@,System.DateTime@,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="partName"></param>
+            <param name="path"></param>
+            <param name="fileId"></param>
+            <param name="projectId"></param>
+            <param name="vaultName"></param>
+            <param name="fileDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.PanelsFramelessStr(System.String[],System.String,System.String,System.String[],System.String[],System.Boolean,System.Boolean,System.String,System.String,System.String[],System.String,System.String[],System.String,System.String,AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws,System.Collections.Generic.List{System.String}@,System.Collections.Generic.List{AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ExistingAsmsAndParts}@,System.Boolean)">
+            <summary>
+            Panelses the frameless string.
+            </summary>
+            <param name="typeOfPanel">The type of panel.</param>
+            <param name="width">The width.</param>
+            <param name="height">The lenght.</param>
+            <param name="materialP1">The material p1.</param>
+            <param name="materialP2">The material p2.</param>
+            <param name="скотч">The СКОТЧ.</param>
+            <param name="усиление">if set to <c>true</c> [УСИЛЕНИЕ].</param>
+            <param name="config">configuration</param>
+            <param name="расположениеПанелей">Расположение панелей</param>
+            <param name="покрытие">ПОКРЫТИЕ</param>
+            <param name="расположениеВставок">Расположение вставок</param>
+            <param name="первыйТип">СОСТАВНАЯ</param>
+            <param name="типТорцевой"></param>
+            <param name="типДвойной"></param>
+            <param name="screws"></param>
+            <param name="partsToDeleteList"></param>
+            <param name="existingAsmsAndParts"></param>
+            <param name="onlySearch"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws.ByHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws.ByWidth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws.ByHeightInnerUp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws.ByWidthInnerUp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws.ByHeightInner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Screws.ByWidthInner">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.PartsToDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.PartsToDelete.PartsToDeleteList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.PartsToDelete.PartName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.PartsToDelete.AsmName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.Width">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.Height">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.Lenght">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.TypeOfUpPanel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.TypeOfDownPanel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.TypeOfUnremPanel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.ScrewsByWidth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.ScrewsByHeight">
+            <summary>
+             
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.ScrewsByLenght">
+            <summary>
+             </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Ironwares.ViewParams">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.OutParameters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.OutParameters.ScrewsByWidth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.OutParameters.ScrewsByHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.OutParameters.Screws">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.OutParameters.PartsToDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Profil(System.Double,System.String,System.Nullable{System.Double})">
+            <summary>
+            Profils the specified lenght.
+            </summary>
+            <param name="height">The lenght.</param>
+            <param name="type">The type.</param>
+            <param name="колЗаклепокВысота"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FrameProfil(System.Double,System.Boolean,System.String,System.Boolean,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="lenght"></param>
+            <param name="соСкотчем"></param>
+            <param name="type"></param>
+            <param name="flange30"></param>
+            <param name="newName1"></param>
+            <returns></returns>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.AddingPanels">
+            <summary>
+            Gets or sets the adding panels.
+            </summary>
+            <value>
+            The adding panels.
+            </value>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.AddingPanel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.AddingPanel.PartQuery">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.AddingPanel.AddPart">
+            <summary>
+            Adds the part.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.AddingPanel.Add">
+            <summary>
+            Adds this instance.
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault">
+            <summary>
+            Хранилище бескаркасных панелей
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.NewName">
+            <summary>
+            Gets or sets the new name.
+            </summary>
+            <value>
+            The new name.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PartInAsmIds">
+            <summary>
+            Gets or sets the part in asm ids.
+            </summary>
+            <value>
+            The part in asm ids.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PartId">
+            <summary>
+            Gets or sets the part identifier.
+            </summary>
+            <value>
+            The part identifier.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PanelTypeId">
+            <summary>
+            Имя типа детали
+            </summary>
+            <value>
+            The name of the panel type.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.ElementType">
+            <summary>
+            Тип детали в сборке
+            </summary>
+            <value>
+            The type of the element.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.Width">
+            <summary>
+            Ширина панели
+            </summary>
+            <value>
+            The width.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.Height">
+            <summary>
+            Высота панели 
+            </summary>
+            <value>
+            The lenght.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PartMat">
+            <summary>
+            Код материала детали
+            </summary>
+            <value>
+            The panel mat.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PartThick">
+            <summary>
+            Gets or sets the part thick.
+            </summary>
+            <value>
+            The part thick.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PartMatThick">
+            <summary>
+            Толщина материала детали
+            </summary>
+            <value>
+            The panel mat thick.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.Reinforcing">
+            <summary>
+            Наличие усиления
+            </summary>
+            <value>
+            The Reinforcing.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.StickyTape">
+            <summary>
+            Gets or sets the sticky tape.
+            </summary>
+            <value>
+            The sticky tape.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.Ral">
+            <summary>
+            Цвет покраски RAL
+            </summary>
+            <value>
+            The ral.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.CoatingType">
+             <summary>
+            Тип покрытия
+             </summary>
+             <value>
+             The type of the coating.
+             </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.CoatingClass">
+            <summary>
+            Gets or sets the coating class.
+            </summary>
+            <value>
+            The coating class.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.Mirror">
+            <summary>
+            Зеркальность детали или сборки
+            </summary>
+            <value>
+            The mirror.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.Step">
+            <summary>
+            Описание шагов дл ясъемных панелей
+            </summary>
+            <value>
+            The step.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.StepInsertion">
+            <summary>
+            Описание шагов для вставок
+            </summary>
+            <value>
+            The step insertion.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.AirHole">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.CoatingTypeOut">
+            <summary>
+            Gets or sets the coating type out.
+            </summary>
+            <value>
+            The coating type out.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.CoatingClassOut">
+            <summary>
+            Gets or sets the coating class out.
+            </summary>
+            <value>
+            The coating class out.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.CoatingTypeIn">
+            <summary>
+            Gets or sets the coating type in.
+            </summary>
+            <value>
+            The coating type in.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.CoatingClassIn">
+            <summary>
+            Gets or sets the coating class in.
+            </summary>
+            <value>
+            The coating class in.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.RalOut">
+            <summary>
+            Gets or sets the ral out.
+            </summary>
+            <value>
+            The ral out.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.RalIn">
+            <summary>
+            Gets or sets the ral in.
+            </summary>
+            <value>
+            The ral in.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PanelMatThickOut">
+            <summary>
+            Gets or sets the part mat thick out.
+            </summary>
+            <value>
+            The part mat thick out.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PanelMatThickIn">
+            <summary>
+            Gets or sets the part mat thick in.
+            </summary>
+            <value>
+            The part mat thick in.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PanelThick">
+            <summary>
+            Gets or sets the panel thick.
+            </summary>
+            <value>
+            The panel thick.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PanelMatOut">
+            <summary>
+            Gets or sets the part mat out.
+            </summary>
+            <value>
+            The part mat out.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PanelMatIn">
+            <summary>
+            Gets or sets the part mat in.
+            </summary>
+            <value>
+            The part mat in.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PanelNumber">
+            <summary>
+            Gets or sets the panel number.
+            </summary>
+            <value>
+            The panel number.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.Name">
+            <summary>
+            Получение имени детали либо сборки
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.NameById">
+            <summary>
+            Gets the name by identifier.
+            </summary>
+            <value>
+            The name by identifier.
+            </value>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.PartsParamsList">
+            <summary>
+            The parts list
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.AirVents_AddPanelFull">
+            <summary>
+            Airs the vents_ add panel full.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.ConvertToDataTable``1(System.Collections.Generic.IList{``0})">
+            <summary>
+            Converts to data table.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data">The data.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.AirVents_AddPanel">
+            <summary>
+            Запрос на добавление детали бескаркасной панели
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.AirVents_AddPartOfPanel">
+            <summary>
+            Airs the vents_ add part of panel.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.FramelessPanelVault.AirVents_AddPanelAsm">
+            <summary>
+            Airs the vents_ add panel asm.
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.InValPanels">
+            <summary>
+            Входящие параметры для определения отверстий верхней и нижней панелей
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.InValPanels.StringValue(System.String)">
+            <summary>
+            Преобразование строки расположение панелей в значения необходимые для построения
+            </summary>
+            <param name="values">The values.</param>
+        </member>
+        <member name="T:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.OutValPanels">
+            <summary>
+            Исходящие параметры для определения отверстий верхней и нижней панелей
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.GetSwWithPart(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="partPath"></param>
+            <returns></returns>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.NewComponents">
+            <summary>
+            Список сгенерированных файлов при построении данной модели.
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BaseFrameFolder">
+            <summary>
+            Папка с исходной моделью "Рамы монтажной". 
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BaseFrameDestinationFolder">
+            <summary>
+            Папка для сохранения компонентов "Рамы монтажной" 
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.UnitS50(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String[],System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Units the S50.
+            </summary>
+            <param name="size">The size.</param>
+            <param name="type">The type.</param>
+            <param name="side">The side.</param>
+            <param name="widthS">The width s.</param>
+            <param name="heightS">The lenght s.</param>
+            <param name="lenghtS">The lenght s.</param>
+            <param name="montageFrame">The montage frame.</param>
+            <param name="typeOfFrame">The type of frame.</param>
+            <param name="frameOffset">The frame offset.</param>
+            <param name="typeOfPanel">The type of panel.</param>
+            <param name="materialP1">The material p1.</param>
+            <param name="materialP2">The material p2.</param>
+            <param name="roofType">Type of the roof.</param>
+            <param name="dumper">The dumper.</param>
+            <param name="spigot">The spigot.</param>
+            <param name="p1">The p1.</param>
+            <param name="p2">The p2.</param>
+            <param name="p3">The p3.</param>
+            <param name="p4">The p4.</param>
+            <param name="widthVb">The width vb.</param>
+            <param name="filter">The filter.</param>
+            <param name="heater">The heater.</param>
+            <param name="cooler">The cooler.</param>
+            <param name="ventil">The ventil.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.UnitS50Str(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String[],System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Units the S50 string.
+            </summary>
+            <param name="size">The size.</param>
+            <param name="type">The type.</param>
+            <param name="side">The side.</param>
+            <param name="widthS">The width s.</param>
+            <param name="heightS">The lenght s.</param>
+            <param name="lenghtS">The lenght s.</param>
+            <param name="thiknessFrame">The thikness frame.</param>
+            <param name="typeOfFrame">The type of frame.</param>
+            <param name="frameOffset">The frame offset.</param>
+            <param name="typeOfPanel">The type of panel.</param>
+            <param name="materialP1">The material p1.</param>
+            <param name="materialP2">The material p2.</param>
+            <param name="roofType">Type of the roof.</param>
+            <param name="dumper">The dumper.</param>
+            <param name="spigot">The spigot.</param>
+            <param name="p1">The p1.</param>
+            <param name="p2">The p2.</param>
+            <param name="p3">The p3.</param>
+            <param name="p4">The p4.</param>
+            <param name="widthVb">The width vb.</param>
+            <param name="filter">The filter.</param>
+            <param name="heater">The heater.</param>
+            <param name="cooler">The cooler.</param>
+            <param name="ventil">The ventil.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.UnitAsmbly(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String,System.String)">
+            <summary>
+            Метод по генерации модели блока усановки на 50-м профиле.
+            </summary>
+            <param name="size">типоразмер</param>
+            <param name="order">The order.</param>
+            <param name="side">сторона обслуживания</param>
+            <param name="widthS">ширина блока</param>
+            <param name="heightS">высота блока</param>
+            <param name="lenghtS">длина блока</param>
+            <param name="frame">The frame.</param>
+            <param name="panels">The panels.</param>
+            <param name="roofType">тип крыши</param>
+            <param name="section">The section.</param>
+            <param name="profilOfCascet"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.UnitAsmblyStr(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String,System.String)">
+            <summary>
+            Units the asmbly string.
+            </summary>
+            <param name="size">The size.</param>
+            <param name="order">The order.</param>
+            <param name="side">The side.</param>
+            <param name="widthS">The width s.</param>
+            <param name="heightS">The lenght s.</param>
+            <param name="lenghtS">The lenght s.</param>
+            <param name="frame"></param>
+            <param name="panels">The panels.</param>
+            <param name="roofType">Type of the roof.</param>
+            <param name="section">The section.</param>
+            <param name="profilOfCascet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.UnitAsmbly30(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String)">
+            <summary>
+            Метод по генерации модели блока усановки на 50-м профиле.
+            </summary>
+            <param name="size">типоразмер</param>
+            <param name="order">The order.</param>
+            <param name="side">сторона обслуживания</param>
+            <param name="widthS">ширина блока</param>
+            <param name="heightS">высота блока</param>
+            <param name="lenghtS">длина блока</param>
+            <param name="frame">The frame.</param>
+            <param name="panels">The panels.</param>
+            <param name="roofType">тип крыши</param>
+            <param name="section">The section.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.UnitAsmbly30Str(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String[],System.String,System.String)">
+            <summary>
+            Units the asmbly string.
+            </summary>
+            <param name="size">The size.</param>
+            <param name="order">The order.</param>
+            <param name="side">The side.</param>
+            <param name="widthS">The width s.</param>
+            <param name="heightS">The lenght s.</param>
+            <param name="lenghtS">The lenght s.</param>
+            <param name="frame"></param>
+            <param name="panels">The panels.</param>
+            <param name="roofType">Type of the roof.</param>
+            <param name="section">The section.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Panels50Build(System.String[],System.String,System.String,System.String[],System.String[],System.String[])">
+            <summary>
+            Метод по генерации модели панелей и дверей для блоков на 50-м профиле.
+            </summary>
+            <param name="typeOfPanel">тип панели</param>
+            <param name="width">ширина панели</param>
+            <param name="height">высота панели</param>
+            <param name="materialP1">материал внешней панели (наименование либо код из базы)</param>
+            <param name="meterialP2">материал внутренней панели (наименование либо код из базы)</param>
+            <param name="покрытие">The ПОКРЫТИЕ.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Panels50BuildStr(System.String[],System.String,System.String,System.String[],System.String[],System.String[],System.Boolean)">
+            <summary>
+            Panels50s the build string.
+            </summary>
+            <param name="typeOfPanel">The type of panel.</param>
+            <param name="width">The width.</param>
+            <param name="height">The lenght.</param>
+            <param name="materialP1">The material p1.</param>
+            <param name="materialP2">The material p2.</param>
+            <param name="покрытие">The ПОКРЫТИЕ.</param>
+            <param name="onlyPath">if set to <c>true</c> [only path].</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Panels30Build(System.String[],System.String,System.String,System.String[],System.String[],System.String[],System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="typeOfPanel"></param>
+            <param name="width"></param>
+            <param name="height"></param>
+            <param name="materialP1"></param>
+            <param name="materialP2"></param>
+            <param name="покрытие"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.MontageFrame(System.String,System.String,System.String,System.String,System.String,System.String,System.String[])">
+            <summary>
+            Метод по генерации монтажной рамы для блоков и установок
+            </summary>
+            <param name="widthS">ширина монтажной рамы</param>
+            <param name="lenghtS">длина рамы</param>
+            <param name="thiknessS">толщина материала рамы</param>
+            <param name="typeOfMf">тип рамы</param>
+            <param name="frameOffset">отступ поперечной балки</param>
+            <param name="material">материал рамы</param>
+            <param name="покрытие">The ПОКРЫТИЕ.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.MontageFrameS(System.String,System.String,System.String,System.String,System.String,System.String,System.Collections.Generic.IList{System.String},System.Boolean)">
+            <summary>
+            Montages the frame s.
+            </summary>
+            <param name="widthS">The width s.</param>
+            <param name="lenghtS">The lenght s.</param>
+            <param name="thiknessS">The thikness s.</param>
+            <param name="typeOfMf">The type of mf.</param>
+            <param name="frameOffset">The frame offset.</param>
+            <param name="material">The material.</param>
+            <param name="покрытие">The ПОКРЫТИЕ.</param>
+            <param name="onlyPath">The ПОКРЫТИЕ.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.GetLastVersionAsmPdm(System.String,System.String)">
+            <summary>
+            Получение последней версии файла в базе PDM.
+            </summary>
+            <param name="path">Путь к файлу.</param>
+            <param name="vaultName">Имя базы PDM.</param>
+            
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.GetLatestVersion(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <param name="vaultName"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.GetAsBuild(System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <param name="vaultName"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.BatchGet(System.String,System.Collections.Generic.List{VentsCadLibrary.VaultSystem.BatchParams},System.Collections.Generic.List{VentsCadLibrary.VaultSystem.PdmFilesAfterGet}@)">
+            <summary>
+            
+            </summary>
+            <param name="vaultName"></param>
+            <param name="list"></param>
+            <param name="pdmFilesAfterGet"></param>
+            <param name="getList"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.GetLastVersionPdm(System.String,System.String)">
+            <summary>
+            Gets the last version PDM.
+            </summary>
+            <param name="path">The path.</param>
+            <param name="vaultName">The PDM base.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.CheckInOutPdm(System.Collections.Generic.List{System.IO.FileInfo},System.Boolean,System.String)">
+            <summary>
+            Регистрация (разрегистрация) в хранилище списка файлов
+            </summary>
+            <param name="filesList">The files list.</param>
+            <param name="registration">if set to <c>true</c> [registration].</param>
+            <param name="vaultName">The PDM base.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.CheckInOutPdm(System.String,System.Boolean,System.String)">
+            <summary>
+            Registrations the PDM.
+            </summary>
+            <param name="filePath">The file path.</param>
+            <param name="registration">if set to <c>true</c> [registration].</param>
+            <param name="vaultName">The PDM base.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.CreateDistDirectory(System.String,System.String)">
+            <summary>
+            Создает директорию для сохранения компонентов новой сборки.
+            </summary>
+            <param name="path">Путь к папке</param>
+            <param name="vaultName"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.IsSheetMetalPart(System.String,System.String)">
+            <summary>
+            Determines whether [is sheet metal part] [the specified part path].
+            </summary>
+            <param name="partPath">The part path.</param>
+            <param name="pdmBase">The PDM base.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.ReubildAllOpenedDocs">
+            <summary>
+            Reubilds all docs.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.SetMeterial(System.String,SolidWorks.Interop.sldworks.ModelDoc2,System.String)">
+            <summary>
+            Задает материал для детали из сборки (если задан componentId) либо по имени детали
+            </summary>
+            <param name="materialName">Материал (код или наименование по базе)</param>
+            <param name="swDoc">Деталь</param>
+            <param name="componentId">The component identifier.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Dispose">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.Dispose(System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="disposing"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.AirVentsClasses.UnitsBuilding.ModelSw.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.MonoBlock01Uc50">
+            <summary>
+            Interaction logic for Unit50UC.xaml
+            </summary>
+            <summary>
+            MonoBlock01Uc50
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.MonoBlock01Uc50.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.MonoBlock01Uc50"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.MonoBlock01Uc50.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.AirVentsUnits50Uc">
+            <summary>
+            Interaction logic for AirVentsUnits50Uc.xaml
+            </summary>
+            <summary>
+            AirVentsUnits50Uc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.AirVentsUnits50Uc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Bom">
+            <summary>
+            Interaction logic for Bom.xaml
+            </summary>
+            <summary>
+            Bom
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Bom.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.Bom"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Bom.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc">
+            <summary>
+            Interaction logic for FramelessUnitUc.xaml
+            </summary>
+            <summary>
+            FramelessUnitUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc"/> class.
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc.AddingConstructParameters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc.AddingConstructParameters.ScrewsByHeight">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc.AddingConstructParameters.ScrewsByWidth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc.AddingConstructParameters.ScrewsByLenght">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc.AddingConstructParameters.PanelsToDelete">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Loggers.LoggerUc">
+            <summary>
+            Interaction logic for HardwareUc.xaml
+            </summary>
+            <summary>
+            LoggerUc
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView.#ctor(System.Collections.IList,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="innerList"></param>
+            <param name="itemsPerPage"></param>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView.Count">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView.CurrentPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView.ItemsPerPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView.PageCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView.MoveToNextPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView.MoveToPreviousPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Loggers.LoggerUc.PagingCollectionView.MoveToLastPage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Loggers.LoggerUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.Loggers.LoggerUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Loggers.LoggerUc.LogStucture.LogStuctures">
+            <summary>
+            Logs the stuctures.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Loggers.LoggerUc.SqlLogStucture">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.Loggers.LoggerUc.SqlLogStucture.ErrorTime">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Loggers.LoggerUc.SqlLogStucture.LogStuctures">
+            <summary>
+            Logs the stuctures.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Loggers.LoggerUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.OrdersUc">
+            <summary>
+            Interaction logic for OrdersUc.xaml
+            </summary>
+            <summary>
+            OrdersUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.OrdersUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.FrameLessUnit.FramelessUnitUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.OrdersUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.PartsListUc">
+            <summary>
+            SpecificationUc и перечень деталей. Выгрузка и работа со сборкой и деталями.
+            </summary>
+            <summary>
+            PartsListUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.PartsListUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:DataControls.Спецификация.PartsListUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.PartsListUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.DamperUc">
+            <summary>
+            Interaction logic for DamperUC.xaml
+            </summary>
+            <summary>
+            DamperUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.DamperUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.DamperUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.DamperUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.GenerateUnit50Control">
+            <summary>
+            
+            </summary>
+            <summary>
+            GenerateUnit50Control
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.GenerateUnit50Control.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.GenerateUnit50Control"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.GenerateUnit50Control.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.MontageFrameUc">
+            <summary>
+            Interaction logic for MontageFrameUC.xaml
+            </summary>
+            <summary>
+            MontageFrameUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.MontageFrameUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.MontageFrameUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.MontageFrameUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Panel50Uc">
+            <summary>
+            Interaction logic for Panel50UC.xaml
+            </summary>
+            <summary>
+            Panel50Uc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Panel50Uc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.Panel50Uc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Panel50Uc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.RoofUc">
+            <summary>
+            Interaction logic for RoofUC.xaml
+            </summary>
+            <summary>
+            RoofUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.RoofUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.RoofUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.RoofUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Specification.SpecificationBomUc">
+            <summary>
+            
+            </summary>
+            <summary>
+            SpecificationBomUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Specification.SpecificationBomUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.Specification.SpecificationUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Specification.SpecificationBomUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Specification.SpecificationUc">
+            <summary>
+            
+            </summary>
+            <summary>
+            SpecificationUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Specification.SpecificationUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.Specification.SpecificationUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Specification.SpecificationUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.SpigotUc">
+            <summary>
+            Interaction logic for SpigotUC.xaml
+            </summary>
+            <summary>
+            SpigotUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.SpigotUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.SpigotUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.SpigotUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Unit50Uc">
+            <summary>
+            Interaction logic for Unit50UC.xaml
+            </summary>
+            <summary>
+            Unit50Uc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Unit50Uc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.Unit50Uc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Unit50Uc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.UnitElement">
+            <summary>
+            Interaction logic for UnitElement.xaml
+            </summary>
+            <summary>
+            UnitElement
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.UnitElement.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.DataControls.UnitElement.SizeOfUnitIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.UnitElement.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.Units50Uc">
+            <summary>
+            Interaction logic for Units50Uc.xaml
+            </summary>
+            <summary>
+            Units50Uc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Units50Uc.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Units50Uc.NavigateData(System.Windows.Controls.UserControl)">
+            <summary>
+            
+            </summary>
+            <param name="nextPage"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.Units50Uc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc">
+            <summary>
+            
+            </summary>
+            <summary>
+            ForConstructorsUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc"/> class.
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.SizesClass">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.SizesClass.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.SizesClass"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.SizesClass.Init">
+            <summary>
+            Initializes this instance.
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.SizesClass.DimId">
+            <summary>
+            Gets or sets the dim identifier.
+            </summary>
+            <value>
+            The dim identifier.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.SizesClass.DimString">
+            <summary>
+            Gets or sets the dim string.
+            </summary>
+            <value>
+            The dim string.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.SizesClass.ViewName">
+            <summary>
+            Gets or sets the name of the view.
+            </summary>
+            <value>
+            The name of the view.
+            </value>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.SizesClass.SheetSizes(System.String)">
+            <summary>
+            Размеры листа
+            </summary>
+            <param name="sheetName">Name of the sheet.</param>
+            <returns></returns>
+        </member>
+        <member name="M:AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="F:AirVentsCadWpf.UserControlEdr.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.UserControlEdr.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.UserControlEdr.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.App.VaultSystemType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.App.VaultType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.App.SqlTestConnectionString">
+            <summary>
+            Gets the SQL connection string.
+            </summary>
+            <value>
+            The SQL connection string.
+            </value>
+        </member>
+        <member name="P:AirVentsCadWpf.App.SqlConnectionString">
+            <summary>
+            Gets the SQL connection string.
+            </summary>
+            <value>
+            The SQL connection string.
+            </value>
+        </member>
+        <member name="T:AirVentsCadWpf.App.ElementVisibility">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.App.ElementVisibility.SetImage(System.String,System.Windows.Controls.Image)">
+            <summary>
+            
+            </summary>
+            <param name="picturePath"></param>
+            <param name="imageUi"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.App.ElementVisibility.ForUiElementsList(System.Collections.Generic.IEnumerable{System.Windows.UIElement},System.Windows.Visibility)">
+            <summary>
+            
+            </summary>
+            <param name="list"></param>
+            <param name="visibility"></param>
+        </member>
+        <member name="M:AirVentsCadWpf.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.MainWindow.NavigateMenu(System.Windows.Controls.UserControl)">
+            <summary>
+            Navigates the menu.
+            </summary>
+            <param name="nextPage">The next page.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.MainWindow.NavigateData(System.Windows.Controls.UserControl)">
+            <summary>
+            Navigates the data.
+            </summary>
+            <param name="nextPage">The next page.</param>
+        </member>
+        <member name="M:AirVentsCadWpf.MainWindow.NavigateButton(System.Windows.Controls.UserControl)">
+            <summary>
+            Navigates the button.
+            </summary>
+            <param name="nextPage">The next page.</param>
+        </member>
+        <member name="P:AirVentsCadWpf.MainWindow.PublishVersion">
+            <summary>
+            Gets the publish version.
+            </summary>
+            <value>
+            The publish version.
+            </value>
+        </member>
+        <member name="M:AirVentsCadWpf.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.MenuControls.AuthenticatedUc">
+            <summary>
+            Interaction logic for AuthenticatedUC.xaml
+            </summary>
+            <summary>
+            AuthenticatedUc
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.MenuControls.AuthenticatedUc.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.MenuControls.AuthenticatedUc"/> class.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.MenuControls.AuthenticatedUc.PdmTestBase">
+            <summary>
+            PDMs the test base.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.MenuControls.AuthenticatedUc.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.MenuControls.MenuTree">
+            <summary>
+            Interaction logic for MenuTree.xaml
+            </summary>
+            <summary>
+            MenuTree
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.MenuControls.MenuTree.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:AirVentsCadWpf.MenuControls.MenuTree"/> class. Дерево елементов.
+            </summary>
+        </member>
+        <member name="M:AirVentsCadWpf.MenuControls.MenuTree.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:AirVentsCadWpf.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:AirVentsCadWpf.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>

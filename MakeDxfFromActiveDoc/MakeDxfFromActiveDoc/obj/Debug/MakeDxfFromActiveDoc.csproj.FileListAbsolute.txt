@@ -1,0 +1,5 @@
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfFromActiveDoc\MakeDxfFromActiveDoc\bin\Debug\MakeDxfFromActiveDoc.exe.config
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfFromActiveDoc\MakeDxfFromActiveDoc\obj\Debug\MakeDxfFromActiveDoc.csprojResolveAssemblyReference.cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfFromActiveDoc\MakeDxfFromActiveDoc\obj\Debug\MakeDxfFromActiveDoc.Form1.resources
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfFromActiveDoc\MakeDxfFromActiveDoc\obj\Debug\MakeDxfFromActiveDoc.Properties.Resources.resources
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\MakeDxfFromActiveDoc\MakeDxfFromActiveDoc\obj\Debug\MakeDxfFromActiveDoc.csproj.GenerateResource.Cache

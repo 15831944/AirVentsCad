@@ -1,0 +1,11 @@
+﻿<Window x:Class="AirVentsCadWpf.AdminkaWindows.Adminka"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Пользователи сети" Height="326" Icon="/AHU Selection/br_icon_teaser_cad_sr_pos_150(1).ico" ShowInTaskbar="False" WindowStartupLocation ="CenterOwner" Width="325" Closing="Window_Closing_1" Loaded="Window_Loaded_1" IsVisibleChanged="Window_IsVisibleChanged_1" Topmost="True">
+    <Grid>
+        <DataGrid x:Name="UsersList" Margin="10,0,0,75" MinWidth="275" MinHeight="100" CanUserReorderColumns="False" CanUserResizeColumns="False" CanUserSortColumns="False" SelectionMode="Single" PreviewMouseLeftButtonDown="UsersList_PreviewMouseLeftButtonDown" PreviewMouseDown="UsersList_PreviewMouseDown" SelectedCellsChanged="UsersList_SelectedCellsChanged" SelectionChanged="UsersList_SelectionChanged"/>
+        <Button x:Name="AddUserToGroupButton" Content="Добавить пользователя в группу" Margin="5,0,5,10" VerticalAlignment="Bottom" Click="AddUserToGroupButton_Click" HorizontalContentAlignment="Center" Height="25" />
+        <Button x:Name="ВыгрузитьПользователейВБазу" Content="Выгрузить пользователей в базу" Margin="5,0,5,40" VerticalAlignment="Bottom" Click="ВыгрузитьПользователейВБазу_Click" HorizontalContentAlignment="Center" Height="25" />
+
+    </Grid>
+</Window>

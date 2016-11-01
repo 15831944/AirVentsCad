@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BomPartList</name>
+    </assembly>
+    <members>
+        <member name="T:BomPartList.BomPartListClass">
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BomPartList.BomPartListClass.Message">
+            <summary>
+            The message
+            </summary>
+        </member>
+        <member name="F:BomPartList.BomPartListClass.AssemblyInfoLabel">
+            <summary>
+            The assembly information label
+            </summary>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.BomList">
+            <summary>
+            Полная спецификация сборки
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.BomList(System.String)">
+            <summary>
+            Boms the list.
+            </summary>
+            <param name="config">The configuration.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.BomListDocMgr">
+            <summary>
+            Boms the list updated with DocMgr .
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.BomListDocMgrOnlyAllAsms">
+            <summary>
+            Boms the list document MGR only all asms.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.BomListDocMgrTopLevel(System.String)">
+            <summary>
+            Boms the list updated with DocMgr .
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.BomListAsm">
+            <summary>
+            Список сборочных единиц в сборке.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.BomListPrt(System.Boolean)">
+            <summary>
+            Список деталей в сборке. 
+            </summary>
+            <param name="onlySheetMetal">if set to <c>true</c> [только интересующие детали - изготавливаемые на заводе*].</param>
+            <returns></returns>
+        </member>
+        <member name="F:BomPartList.BomPartListClass.Logger">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:BomPartList.BomPartListClass.Exception">
+            <summary>
+            The exception
+            </summary>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.AcceptAllChanges(System.Collections.Generic.IEnumerable{BomPartList.BomPartListClass.BomCells})">
+            <summary>
+            Accepts all changes.
+            </summary>
+            <param name="chengedParts">The chenged parts.</param>
+        </member>
+        <member name="M:BomPartList.BomPartListClass.AcceptAllChanges(System.Collections.Generic.List{BomPartList.BomPartListClass.BomCells},System.Collections.Generic.List{BomPartList.BomPartListClass.BomCells})">
+            <summary>
+            Accepts all changes.
+            </summary>
+            <param name="currentBomList">The current bom list.</param>
+            <param name="newBomList">The new bom list.</param>
+        </member>
+        <member name="P:BomPartList.BomPartListClass.PdmBaseName">
+            <summary>
+            Gets or sets the name of the PDM base. For example: "Vents-PDM"
+            </summary>
+        </member>
+        <member name="P:BomPartList.BomPartListClass.BomId">
+            <summary>
+            Gets or sets the bom identifier.
+            </summary>
+            <value>
+            The bom identifier. Для "Vents-Pdm" - 8
+            </value>
+        </member>
+        <member name="P:BomPartList.BomPartListClass.UserName">
+            <summary>
+            Gets or sets the name of the user. For example: "kb64"
+            </summary>
+        </member>
+        <member name="P:BomPartList.BomPartListClass.UserPassword">
+            <summary>
+            Gets or sets the user password. For example: "12345"
+            </summary>
+        </member>
+        <member name="P:BomPartList.BomPartListClass.AssemblyPath">
+            <summary>
+            Gets or sets the assembly path.
+            </summary>
+            <value>
+            The assembly fullpath in pdm.
+            </value>
+        </member>
+        <member name="P:BomPartList.BomPartListClass.AsmConfiguration">
+            <summary>
+            Gets or sets the asm configuration.
+            </summary>
+            <value>
+            The asm configuration.
+            </value>
+        </member>
+        <member name="P:BomPartList.BomPartListClass.ConnectionToSql">
+            <summary>
+            Gets or sets the connection to SQL.
+            </summary>
+            <value>
+            The connection to SQL. Строка подключения к базе данных.
+            </value>
+        </member>
+        <member name="T:BomPartList.BomPartListClass.BomCells">
+            <summary>
+            Поля спецификации
+            </summary>
+        </member>
+        <member name="P:BomPartList.BomPartListClass.BomCells.Errors">
+            <summary>
+            Gets or sets the errors.
+            </summary>
+            <value>
+            Поле заполняется по результатам проверки других полей автоматически. Если пусто - все данные устраивают.
+            </value>
+        </member>
+        <member name="T:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.Спецификация(System.String,System.Int32,System.String)">
+            <summary>
+            Спецификация Сборки.
+            </summary>
+            <param name="путьКСборке">Путь к Сборке.</param>
+            <param name="idСпецификации">id Спецификации.</param>
+            <param name="конфигурация">Конфигурация.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.Спецификация(System.String,System.String)">
+            <summary>
+            Спецификация Сборки.
+            </summary>
+            <param name="путьКСборке">Путь к Сборке.</param>
+            <param name="конфигурация">Конфигурация.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.ПолучениеПутиКСборке(System.String)">
+            <summary>
+            Получение пути к сборке.
+            </summary>
+            <param name="имяСборки">Имя сборки в базе.</param>
+            <returns></returns>
+        </member>
+        <member name="M:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.ПолучениеКонфигураций(System.String)">
+            <summary>
+            Получение списка конфигураций по пути к файлу сборки.
+            </summary>
+            <param name="путьКСборке">Путь к файлу сборки.</param>
+            <returns></returns>
+        </member>
+        <member name="P:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.ИмяХранилища">
+            <summary>
+            Gets or sets the name of the PDM base. For example: "Vents-PDM"
+            </summary>
+        </member>
+        <member name="P:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.ИмяПользователя">
+            <summary>
+            Gets or sets the name of the user. For example: "kb64"
+            </summary>
+        </member>
+        <member name="P:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.ПарольПользователя">
+            <summary>
+            Gets or sets the user password. For example: "12345"
+            </summary>
+        </member>
+        <member name="T:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.ДанныеДляВыгрузки">
+            <summary>
+            Поля спецификации
+            </summary>
+        </member>
+        <member name="P:BomPartList.Спецификации.СпецификацияДляВыгрузкиСборки.ДанныеДляВыгрузки.Errors">
+            <summary>
+            Gets or sets the errors.
+            </summary>
+            <value>
+            Поле заполняется по результатам проверки других полей автоматически. Если пусто - все данные устраивают.
+            </value>
+        </member>
+    </members>
+</doc>

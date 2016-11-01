@@ -1,0 +1,157 @@
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\AirVentsCad.exe.config
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\AirVentsCad.XML
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad.exe
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\AirVentsCad.exe.manifest
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\AirVentsCad.application
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\AirVentsCad.exe
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\AirVentsCad.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\ExportPartData.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\HostingWindowsForms.exe
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\MakeDxfUpdatePartData.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\System.Windows.Controls.Input.Toolkit.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\System.Windows.Controls.Layout.Toolkit.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\VentsCadLibrary.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\VentsMaterials.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\VentsPDM-dll.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\WpfAnimatedGif.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\WPFTextBoxAutoComplete.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\WPFToolkit.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\Interop.EdmLib.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\ConnectorOneC.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\FixBends.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\Excel.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\ExportPartData.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\HostingWindowsForms.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\BomPartList.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\BomPartList.xml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\MakeDxfUpdatePartData.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\MakeDxfUpdatePartData.xml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\VentsCadLibrary.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\WpfAnimatedGif.xml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\ConnectorOneC.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\FixBends.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\Excel.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCadWpf.csprojResolveAssemblyReference.cache
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\Adminka.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\SettingsW.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\AirVentsUnits50Uc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Bom.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\FrameLessUnit\FramelessUnitUc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Loggers\LoggerUc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\OrdersUc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\PartsListUc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\DamperUC.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\GenerateUnit50Control.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\GroupUserControl.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\MontageFrameUC.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Panel50UC.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\RoofUC.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\SpecificationBomUc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Unit50Uc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\UnitElement.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Units50Uc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\SpecificationUc.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\ForConstructors\ForConstructorsUC.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\MainWindow.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\MenuControls\AuthenticatedUC.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\MenuControls\MenuTree.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\SpigotUC.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\Adminka.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\SettingsW.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\AirVentsUnits50Uc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Bom.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\FrameLessUnit\FramelessUnitUc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Loggers\LoggerUc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\OrdersUc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\PartsListUc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\DamperUC.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\GenerateUnit50Control.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\GroupUserControl.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\MontageFrameUC.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Panel50UC.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\RoofUC.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\SpecificationBomUc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Unit50Uc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\UnitElement.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Units50Uc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\SpecificationUc.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\ForConstructors\ForConstructorsUC.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\MainWindow.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\MenuControls\AuthenticatedUC.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\MenuControls\MenuTree.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\SpigotUC.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\App.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad_Content.g.cs
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad_MarkupCompile.cache
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad.g.resources
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCadWpf.Properties.Resources.resources
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCadWpf.csproj.GenerateResource.Cache
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad.exe.manifest
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad.application
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCadWpf.UserControlEdr.resources
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\PdmAsmBomToXml.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\PdmAsmBomToXml.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad_MarkupCompile.lref
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\bin\Debug\AddinConvertTo.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\01-MonoBlock50.baml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\01-MonoBlock50.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\bin\Debug\AirVentsCad.exe.config
+D:\Vlad\AirVentsCad\AirVentsCadWpf\bin\Debug\AirVentsCad.XML
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad.exe
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad.pdb
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCadWpf.csprojResolveAssemblyReference.cache
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\Adminka.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\01-MonoBlock50.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\AirVentsUnits50Uc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Bom.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\FrameLessUnit\FramelessUnitUc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Loggers\LoggerUc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\OrdersUc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\PartsListUc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\DamperUC.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\GenerateUnit50Control.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\GroupUserControl.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\MontageFrameUC.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Panel50UC.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\RoofUC.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\SpecificationBomUc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Unit50Uc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\UnitElement.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Units50Uc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\SpecificationUc.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\ForConstructors\ForConstructorsUC.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\MainWindow.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\MenuControls\AuthenticatedUC.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\MenuControls\MenuTree.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\SpigotUC.baml
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\Adminka.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\SettingsW.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\01-MonoBlock50.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\AirVentsUnits50Uc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Bom.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\FrameLessUnit\FramelessUnitUc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Loggers\LoggerUc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\OrdersUc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\PartsListUc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\DamperUC.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\GenerateUnit50Control.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AdminkaWindows\GroupUserControl.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\MontageFrameUC.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Panel50UC.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\RoofUC.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\SpecificationBomUc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Unit50Uc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\UnitElement.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Units50Uc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\Specification\SpecificationUc.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\ForConstructors\ForConstructorsUC.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\MainWindow.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\MenuControls\AuthenticatedUC.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\MenuControls\MenuTree.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\DataControls\SpigotUC.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\App.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad_Content.g.cs
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad_MarkupCompile.cache
+D:\Vlad\AirVentsCad\AirVentsCadWpf\obj\Debug\AirVentsCad_MarkupCompile.lref

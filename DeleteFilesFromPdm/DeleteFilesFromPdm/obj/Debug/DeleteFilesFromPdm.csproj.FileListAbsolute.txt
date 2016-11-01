@@ -1,0 +1,8 @@
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\DeleteFilesFromPdm\DeleteFilesFromPdm\bin\Debug\DeleteFilesFromPdm.exe
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\DeleteFilesFromPdm\DeleteFilesFromPdm\bin\Debug\DeleteFilesFromPdm.pdb
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\DeleteFilesFromPdm\DeleteFilesFromPdm\bin\Debug\Interop.EdmLib.dll
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\DeleteFilesFromPdm\DeleteFilesFromPdm\obj\Debug\DeleteFilesFromPdm.csprojResolveAssemblyReference.cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\DeleteFilesFromPdm\DeleteFilesFromPdm\obj\Debug\Interop.EdmLib.dll
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\DeleteFilesFromPdm\DeleteFilesFromPdm\obj\Debug\DeleteFilesFromPdm.csproj.ResolveComReference.cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\DeleteFilesFromPdm\DeleteFilesFromPdm\obj\Debug\DeleteFilesFromPdm.exe
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\DeleteFilesFromPdm\DeleteFilesFromPdm\obj\Debug\DeleteFilesFromPdm.pdb

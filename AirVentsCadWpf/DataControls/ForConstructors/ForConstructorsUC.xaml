@@ -1,0 +1,88 @@
+﻿<UserControl x:Class="AirVentsCadWpf.DataControls.ForConstructors.ForConstructorsUc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Background="#FFFFFEFE" >
+    <Grid  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="67"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Background="#FFF3E7E7"/>
+
+        <Grid HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Background="#FFF3E7E7"/>
+        <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Loaded="Grid_Loaded_2">
+            <Grid x:Name="Temporary" HorizontalAlignment="Left"  Margin="0,0,0,20" VerticalAlignment="Bottom" Width="450">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Тип" HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
+                <ComboBox x:Name="TypeOfDumper" TabIndex="1" HorizontalAlignment="Center" VerticalAlignment="Stretch" SelectedIndex="0" IsReadOnly="True" Grid.Column="1"  Height="24">
+                    <ListBoxItem Content="20" />
+                    <ListBoxItem Content="30" />
+                </ComboBox>
+                <Grid VerticalAlignment="Center" Grid.Column="3" HorizontalAlignment="Left">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="HeightDamper" TabIndex="5" MaxLength ="4"  HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="3" Width="40" Height="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" KeyDown="HeightDamper_KeyDown"/>
+                    <Label x:Name="HeightLabel" Content="Высота" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="2"/>
+                    <TextBox x:Name="WidthDamper"  PreviewTextInput="NumberValidationTextBox"  TabIndex="3" MaxLength ="4" HorizontalAlignment="Center" Width="40" Height="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" VerticalAlignment="Center" Grid.Column="1" KeyDown="WidthDamper_KeyDown" />
+                    <Label x:Name="WidthLabel"  Grid.Column="0" Content="Ширина" HorizontalAlignment="Left"  VerticalAlignment="Center"/>
+                </Grid>
+                <Button Grid.Row="0" x:Name="BuildDamper" TabIndex="7" Content="Построить" HorizontalAlignment="Left" Height="30" Margin="0" VerticalAlignment="Bottom" Width="100"  Background="{x:Null}" Click="BuildDamper_Click" />
+            </Grid>
+            <Label Content="Конструкторам" HorizontalAlignment="Left" Margin="44,0,0,80" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Height="42" VerticalAlignment="Bottom"/>
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" Background="#FFF3E7E7"/>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" Background="#FFF3E7E7"/>
+        <GroupBox Header="SolidWorks" HorizontalAlignment="Left" Margin="5" Grid.Row="4">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Content="Обозначения текущего документа" Margin="5" VerticalAlignment="Top" Click="Button_Click_1" Background="{x:Null}" Padding="5,1"/>
+                <Button Content="Закрыть активный документ" Margin="5" VerticalAlignment="Top" Grid.Row="1" Click="Button_Click_3" Background="{x:Null}" Padding="5,1"/>
+                <Button Content="Закрыть SolidWorks" Margin="5" VerticalAlignment="Top" Grid.Row="2" Click="Button_Click_2" Background="{x:Null}" Padding="5,1"/>
+                <Button Content="Закрыть процесс SolidWorks" Margin="5" VerticalAlignment="Bottom" Grid.Row="3" Click="Button_Click_4" Background="{x:Null}" Padding="5,1"/>
+                <Button Content="Внести массу по всем к-ям в таблицу параметров" Margin="5" VerticalAlignment="Bottom" Grid.Row="4" Background="{x:Null}" Padding="5,1" Click="Button_Click"/>
+                <Button Content="Получение детали и свойств" Margin="5" VerticalAlignment="Bottom" Grid.Row="5" Background="{x:Null}" Padding="5,1" Click="Button_Click_5" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Таблицы для чертежей" HorizontalAlignment="Left" Margin="5" Grid.Row="2">
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="ДобавитьТаблицуВидов" Content="Добавить таблицу видов" Margin="5" VerticalAlignment="Top" Background="{x:Null}" Click="ДобавитьТаблицуВидов_Click" Padding="5,1"/>
+                <Button x:Name="ДобавитьТаблицуРазмеров" Content="Добавить таблицу размеров" Margin="5" Grid.Row="1" VerticalAlignment="Top" Background="{x:Null}" Padding="5,1" Click="ДобавитьТаблицуРазмеров_Click"/>
+            </Grid>
+        </GroupBox>
+        <DataGrid x:Name="ТаблицаВидов" HorizontalAlignment="Left" Margin="213,10,0,0" Grid.Row="2" VerticalAlignment="Top" Height="87" Width="218"/>
+    </Grid>
+
+
+
+</UserControl>
+
+

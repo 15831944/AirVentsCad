@@ -1,0 +1,336 @@
+﻿<UserControl x:Class="AirVentsCadWpf.DataControls.PartsListUc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Background="#FFFFFEFE" >
+    <Grid  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="67"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="67"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="15"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Background="#FFF3E7E7" Grid.ColumnSpan="2"/>
+
+        <Grid HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Background="#FFF3E7E7" Grid.ColumnSpan="2"/>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" Background="#FFF3E7E7" Grid.ColumnSpan="2"/>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" Background="#FFF3E7E7" Grid.ColumnSpan="2"/>
+        <Grid x:Name="AsmComponents" HorizontalAlignment="Left" Margin="2,2,0,2" Grid.Row="2" Grid.ColumnSpan="2" MinHeight="67">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="400*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" x:Name="PrtGrid" Margin="2,2,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="1" x:Name="PrtMessage2" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <GroupBox Grid.Column="1" Header="Выбранная деталь" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top">
+                        <Grid Margin="2" HorizontalAlignment="Left">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" MinHeight="25"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <DataGrid x:Name="SelectedPart" Margin="2" Grid.Column="0" IsReadOnly="True" CanUserResizeRows="False" AutoGenerateColumns="False" SelectedIndex="0" 
+                    			CanUserReorderColumns="False" CanUserResizeColumns="True" CanUserSortColumns="True" SelectionUnit="FullRow" 
+                    			MaxHeight="350"  MinHeight="2"
+                    			SelectionMode="Single"  
+                    			LoadingRow="BomTable_LoadingRow" Grid.Row="0" Grid.ColumnSpan="4" >
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Обозначение" Width="Auto" MaxWidth="170" Binding="{Binding ОбозначениеDocMgr}"/>
+                                    <DataGridTextColumn Header="Наименование" Width="Auto" MaxWidth="170" Binding="{Binding НаименованиеDocMgr}"/>
+                                    <DataGridTextColumn Header="Конфигурация" Width="Auto" Binding="{Binding Конфигурация}">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style>
+                                                <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+                                    <DataGridTextColumn Header="Материал" Width="Auto" MaxWidth="150" Binding="{Binding Материал}"/>
+                                    <DataGridTextColumn Header="Материал ЦМИ" Width="Auto" MaxWidth="200" Binding="{Binding MaterialDocMgr}"/>
+                                    <DataGridTextColumn Header="Толщина" Width="Auto" Binding="{Binding ТолщинаЛиста}">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style>
+                                                <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+                                    <DataGridTextColumn Header="Кол-во" Width="Auto" Binding="{Binding Количество}">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style>
+                                                <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+                                    <DataGridTextColumn Header="Версия" Width="Auto" Binding="{Binding ПоследняяВерсия}">
+                                        <DataGridTextColumn.ElementStyle>
+                                            <Style>
+                                                <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                            </Style>
+                                        </DataGridTextColumn.ElementStyle>
+                                    </DataGridTextColumn>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                            <Grid Grid.ColumnSpan="4" Grid.Column="0" Margin="2" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid x:Name="PartPropsConfig" HorizontalAlignment="Center" Margin="2" VerticalAlignment="Center"
+                    				Grid.Column="1">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="ConfigList" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" SelectedIndex="0" MinWidth="50" Background="{x:Null}" LayoutUpdated="MaterialsList_LayoutUpdated"/>
+                                    <Button x:Name="AcceptConfig" Content="Задать конфигурацию" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Padding="1" Click="Accept_Click" Background="{x:Null}"/>
+                                    <Button x:Name="BeginUpdatePartPropConfig" Content="Применить" Margin="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Click="BeginUpdatePartProp_Click" Background="{x:Null}"/>
+                                </Grid>
+                                <Grid x:Name="PartProps" HorizontalAlignment="Center" Margin="2" VerticalAlignment="Center" Grid.Column="2">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="MaterialsList" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" SelectedIndex="0" MinWidth="100" Background="{x:Null}" LayoutUpdated="MaterialsList_LayoutUpdated"/>
+                                    <Button x:Name="Accept" Content="Задать материал" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Padding="1" Click="Accept_Click" Background="{x:Null}"/>
+                                    <Button x:Name="BeginUpdatePartProp" Content="Применить" Margin="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Click="BeginUpdatePartProp_Click" Background="{x:Null}"/>
+                                </Grid>
+                                <Grid x:Name="PartPropsCopy" HorizontalAlignment="Center" Margin="2" VerticalAlignment="Center" Grid.Column="3">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <ComboBox x:Name="ThiknessList" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" SelectedIndex="0" MinWidth="50" Background="{x:Null}" LayoutUpdated="MaterialsList_LayoutUpdated"/>
+                                    <Button x:Name="AcceptThikness" Content="Задать толщину" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Padding="1" Click="Accept_Click" Background="{x:Null}"/>
+                                    <Button x:Name="BeginUpdatePartPropThikness" Content="Применить" Margin="5" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Click="BeginUpdatePartProp_Click" Background="{x:Null}"/>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+                <Grid HorizontalAlignment="Left" Margin="5,5,0,0" Grid.Row="7" VerticalAlignment="Top">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                </Grid>
+                <GroupBox Grid.Row="0" Header="Перечень деталей" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top">
+                    <Grid Margin="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid Margin="3">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Label x:Name="СосотяниеСборки" Grid.Column="0" Content="Перечень деталей"  HorizontalAlignment="Left" Margin="3" VerticalAlignment="Center" Grid.Row="1" Padding="2"/>
+                            <Grid Grid.Row="1" Grid.Column="1" Margin="3" VerticalAlignment="Center" HorizontalAlignment="Right">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <TextBox Grid.Row="0" Grid.Column="1" x:Name="FilterTextBox" HorizontalAlignment="Center" Margin="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" TextChanged="FilterTextBox_OnSelectionChanged" Height="19" Width="100"/>
+                                <Label Grid.Row="0" Grid.Column="0" Content="Фильтр" HorizontalAlignment="Center" Margin="2" VerticalAlignment="Center" RenderTransformOrigin="0.579,0.115" Padding="2"/>
+                            </Grid>
+                            <Label x:Name="AssemblyInfo" Content="Текущая сборка" HorizontalAlignment="Left" Margin="3" VerticalAlignment="Center" LayoutUpdated="AssemblyInfo_LayoutUpdated" MinWidth="100"
+                    			Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" Padding="2" />
+                        </Grid>
+                        <DataGrid x:Name="BomTablePrt" ItemsSource="{Binding BomCells}"  Margin="3" Grid.Row="1" IsReadOnly="True" CanUserResizeRows="False" AutoGenerateColumns="False" SelectedIndex="0" Height="Auto" Width="Auto" 
+                        	CanUserReorderColumns="False" CanUserResizeColumns="True" CanUserSortColumns="True" SelectionUnit="FullRow" 
+                        	MaxHeight="300"  MinHeight="2"
+                        	SelectionMode="Single" ToolTip="Двойной щелчек для для добавления в список выбранной детали"
+                        	LoadingRow="BomTable_LoadingRow" 
+                        	MouseDoubleClick="BomTablePrt_MouseDoubleClick" SelectionChanged="BomTablePrt_SelectionChanged">
+                            <!-- SelectionChanged="BomTablePrt_SelectionChanged"                  
+                  LoadingRow="BomTable_LoadingRow" >-->
+                            <DataGrid.Columns>
+                                <!--   <DataGridTextColumn Header="Раздел" Width="Auto" MinWidth="70" Binding="{Binding Path=Раздел}"/> -->
+                                <!--     <DataGridTextColumn Header="Раздел" Width="Auto" MaxWidth="120" Binding="{Binding РазделDocMgr}"/>-->
+                                <!--  <DataGridTextColumn Header="Раздел" Width="Auto" MinWidth="70" Binding="{Binding Path=Раздел}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Путь" Width="Auto" MaxWidth="120" Binding="{Binding Path=Путь}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Уровень" Width="Auto" MinWidth="70" Binding="{Binding Path=Уровень}"></DataGridTextColumn>  -->
+                                <!--   <DataGridTextColumn Header="Тип" Width="Auto" MinWidth="30" Binding="{Binding ТипФайла}">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style>
+                                    <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn> -->
+                                <!-- <DataGridTextColumn Header="Обозначение" Width="Auto" MinWidth="70" Binding="{Binding Обозначение, StringFormat=\{0:C\}}"/> -->
+                                <DataGridTextColumn Header="Обозначение" Width="150" MaxWidth="170" Binding="{Binding ОбозначениеDocMgr}"/>
+                                <DataGridTextColumn Header="Наименование" Width="130" MaxWidth="170" Binding="{Binding НаименованиеDocMgr}"/>
+                                <DataGridTextColumn Header="ERPCode" Width="Auto" Binding="{Binding ERPCode}"/>
+                                <DataGridTextColumn Header="Конфиг." Width="65" Binding="{Binding Конфигурация}">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style>
+                                            <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <!--   <DataGridTextColumn Header="Наименование" Width="Auto" Binding="{Binding Наименование}"/> -->
+                                <DataGridTextColumn Header="Материал" Width="80" MaxWidth="150" Binding="{Binding Материал}"/>
+                                <DataGridTextColumn Header="Материал ЦМИ" Width="100" MaxWidth="200" Binding="{Binding MaterialDocMgr}"/>
+
+                                <!--     <DataGridTextColumn Header="Материал ЦМИ" Width="Auto" MaxWidth="150" Binding="{Binding МатериалЦми}"/> 
+                            <DataGridTextColumn Header="Ошибки" Width="Auto" Binding="{Binding Errors}"/> -->
+                                <DataGridTextColumn Header="Толщина" Width="60" Binding="{Binding ТолщинаЛиста}">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style>
+                                            <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Кол-во" Width="50" Binding="{Binding Количество}">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style>
+                                            <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                                <DataGridTextColumn Header="Версия" Width="50" Binding="{Binding ПоследняяВерсия}">
+                                    <DataGridTextColumn.ElementStyle>
+                                        <Style>
+                                            <Setter Property="TextBlock.TextAlignment" Value="Center" />
+                                        </Style>
+                                    </DataGridTextColumn.ElementStyle>
+                                </DataGridTextColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                        <Button x:Name="BeginUpdate1" Content="Применить изменения" Margin="3" Background="{x:Null}" Click="BeginUpdate1_Click" VerticalAlignment="Top" HorizontalAlignment="Right" Grid.Row="2" Padding="3"/>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+            <GroupBox Grid.Column="1" Header="Детали для обработки" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top">
+                <Grid x:Name="SelectedPrtGrid" Margin="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid x:Name="BomTableSelectedPrt" Margin="5" Grid.Row="1" IsReadOnly="True" CanUserResizeRows="False" AutoGenerateColumns="False" SelectedIndex="0" Height="Auto" Width="Auto" VerticalAlignment="Top" LoadingRow="BomTable_LoadingRow" CanUserReorderColumns="False" CanUserResizeColumns="True" CanUserSortColumns="True" SelectionUnit="FullRow"  MaxHeight="250"  MinHeight="2" SelectionMode="Single" HorizontalAlignment="Left" LayoutUpdated="BomTableSelectedPrt_LayoutUpdated" SelectionChanged="BomTableSelectedPrt_SelectionChanged"  >
+                        <DataGrid.Columns>
+                            <!--  <DataGridTextColumn Header="Раздел" Width="Auto" MinWidth="70" Binding="{Binding Path=Раздел}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Путь" Width="Auto" MaxWidth="120" Binding="{Binding Path=Путь}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Уровень" Width="Auto" MinWidth="70" Binding="{Binding Path=Уровень}"></DataGridTextColumn>  -->
+                            <DataGridTextColumn Header="Обозначение" Width="Auto" MinWidth="70" Binding="{Binding Обозначение, StringFormat=\{0:C\}}"/>
+                            <DataGridTextColumn Header="Наименование" Width="Auto" Binding="{Binding Наименование}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Grid x:Name="PrtMessage1" Margin="2" Grid.Row="2" MinHeight="100" VerticalAlignment="Center" HorizontalAlignment="Left">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition Height="28"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="35"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Button x:Name="BeginUpdate" Content="Применить действия" Margin="2,2,2,3" VerticalAlignment="Center" Background="{x:Null}" Grid.Row="3" Height="30" Grid.ColumnSpan="3" Click="BeginUpdate_Click"/>
+                        <Button x:Name="УдалитьВыбранную" Content="Удалить выбранную" Margin="2" VerticalAlignment="Center" Background="{x:Null}"
+            				Grid.Row="0" Grid.Column="0" Height="25" Click="УдалитьВыбранную_Click"/>
+                        <Button x:Name="ClearList" Content="Очистить список" Margin="2" VerticalAlignment="Center" Width="Auto"  Background="{x:Null}" Height="25" Click="ClearList_Click"
+            				Grid.Row="0" Grid.Column="2"/>
+                        <CheckBox x:Name="UpdateCutList" Content="Выгрузить CutList'ы" Margin="5" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="3"
+            				Grid.Column="0" HorizontalAlignment="Left" Click="UpdateCutList_Click"/>
+                        <CheckBox x:Name="MakeDxf" Content="Создать развертки DXF" Margin="5" Grid.Row="2"
+            				Grid.Column="0" VerticalAlignment="Top" Grid.ColumnSpan="3" Click="MakeDxf_Click"/>
+                    </Grid>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <Grid Grid.Row="0" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="Status" Grid.Row="0" Content="SpecificationUc" HorizontalAlignment="Left" Margin="0,-1,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Height="42" VerticalAlignment="Top"
+                   Grid.Column="0" />
+            <Button x:Name="OpenAsm" Content="Выбрать сборку из проводника" HorizontalAlignment="Center" Margin="2" Click="OpenAsm_Click" Background="{x:Null}"
+            	Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" Padding="5,2"/>
+            <Grid HorizontalAlignment="Left" Margin="3,3,0,3" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Имя сборки" HorizontalAlignment="Center" Margin="3" VerticalAlignment="Center"/>
+                <TextBox x:Name="ИмяСборки" Grid.Column="1" HorizontalAlignment="Center" Margin="3,5" Text="" VerticalAlignment="Center" MinWidth="100" Padding="5,2" KeyDown="ИмяСборки_KeyDown"/>
+                <Button x:Name="ВыгрузитьСписокДеталей" Content="Поиск" Grid.Column="2" HorizontalAlignment="Center" Margin="5" VerticalAlignment="Center" Background="{x:Null}" Click="ВыгрузитьСписокДеталей_Click" Padding="5,2"/>
+                <Button x:Name="ВыгрузитьСпецификацию" Content="Выгрузить спецификацию" Grid.Column="4" HorizontalAlignment="Center" Margin="3" VerticalAlignment="Center" Background="{x:Null}" Click="ВыгрузитьСпецификацию_Click" Padding="5,2"/>
+                <ComboBox x:Name="Конфигурации" Grid.Column="3" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Center" Background="{x:Null}" SelectedIndex="0" LayoutUpdated="Конфигурации_LayoutUpdated" MinWidth="35" Padding="5,4"/>
+            </Grid>
+            <Button Grid.Row="1" x:Name="ВыгрузитьВXml" Content="Выгрузить в XML" HorizontalAlignment="Center" Margin="2" VerticalAlignment="Center" Background="{x:Null}" Padding="5,2" Click="ВыгрузитьВXml_Click" Grid.Column="1"/>
+            <CheckBox x:Name="IncludeAsms" Content="Для всех подсборок" Grid.Column="2" HorizontalAlignment="Center" Margin="2" Grid.Row="1" VerticalAlignment="Center"/>
+        </Grid>
+        <Button Content="Button" HorizontalAlignment="Left" Height="31" Margin="732,26,0,0" Grid.Row="4" VerticalAlignment="Top" Width="93" Click="Button_Click_1"/>
+
+    </Grid>
+
+
+
+</UserControl>
+
+

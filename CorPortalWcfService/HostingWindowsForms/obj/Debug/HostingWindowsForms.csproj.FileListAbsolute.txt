@@ -1,0 +1,77 @@
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe.config
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.pdb
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\bin\Debug\ConnectorOneC.dll
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\bin\Debug\ConnectorOneC.pdb
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csprojResolveAssemblyReference.cache
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.HostingForm.resources
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.Properties.Resources.resources
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.GenerateResource.Cache
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.exe
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.pdb
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\obj\Debug\Interop.EdmLib.dll
+C:\Users\KB80\Source\Repos\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.ResolveComReference.cache
+D:\Git\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe.config
+D:\Git\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe
+D:\Git\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.pdb
+D:\Git\CorPortalWcfService\HostingWindowsForms\bin\Debug\ConnectorOneC.dll
+D:\Git\CorPortalWcfService\HostingWindowsForms\bin\Debug\ConnectorOneC.pdb
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csprojResolveAssemblyReference.cache
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\Interop.EdmLib.dll
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.ResolveComReference.cache
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.HostingForm.resources
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.Properties.Resources.resources
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.GenerateResource.Cache
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.exe
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.pdb
+D:\Git\CorPortalWcfService\HostingWindowsForms\bin\Debug\System.ServiceModel.dll
+D:\Git\CorPortalWcfService\HostingWindowsForms\obj\Debug\Interop.EPDMLibLib.dll
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csprojResolveAssemblyReference.cache
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\Interop.EdmLib.dll
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.ResolveComReference.cache
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.HostingForm.resources
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.Properties.Resources.resources
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.GenerateResource.Cache
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.exe
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.pdb
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe.config
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.pdb
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\ConnectorOneC.dll
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\System.ServiceModel.dll
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\ConnectorOneC.pdb
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\Interop.EdmLib.dll
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe.manifest
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.application
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.TrustInfo.xml
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.exe.manifest
+D:\Projects VisualStudio\Source\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.application
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe.config
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe.manifest
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.application
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\ConnectorOneC.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\System.ServiceModel.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\ConnectorOneC.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\Interop.EdmLib.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csprojResolveAssemblyReference.cache
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\Interop.EdmLib.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.ResolveComReference.cache
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.Properties.Resources.resources
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.GenerateResource.Cache
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.TrustInfo.xml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.exe.manifest
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.application
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.exe
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.Host.HostingForm.resources
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csprojResolveAssemblyReference.cache
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\Interop.EdmLib.dll
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.ResolveComReference.cache
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.Host.HostingForm.resources
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.Properties.Resources.resources
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.csproj.GenerateResource.Cache
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.exe
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\obj\Debug\HostingWindowsForms.pdb
+D:\Vlad\AirVentsCad\CorPortalWcfService\HostingWindowsForms\bin\Debug\HostingWindowsForms.exe.config

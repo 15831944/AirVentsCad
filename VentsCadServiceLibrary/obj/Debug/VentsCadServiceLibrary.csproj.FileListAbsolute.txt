@@ -1,0 +1,12 @@
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\VentsCadServiceLibrary.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\VentsCadServiceLibrary.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\obj\Debug\VentsCadServiceLibrary.csprojResolveAssemblyReference.cache
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\obj\Debug\VentsCadServiceLibrary.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\obj\Debug\VentsCadServiceLibrary.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\VentsCadLibrary.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\Interop.EdmLib.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\MakeDxfUpdatePartData.dll
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\VentsCadLibrary.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\MakeDxfUpdatePartData.pdb
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\MakeDxfUpdatePartData.xml
+D:\Projects VisualStudio\Source\Repos\AirVentsCad\VentsCadServiceLibrary\bin\Debug\AddinConvertTo.dll

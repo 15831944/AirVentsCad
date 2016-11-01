@@ -1,0 +1,17 @@
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\bin\Debug\TestVentsCadLibrary.exe.config
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\bin\Debug\TestVentsCadLibrary.exe
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\bin\Debug\TestVentsCadLibrary.pdb
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\bin\Debug\VentsCadLibrary.dll
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\bin\Debug\Interop.EdmLib.dll
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\bin\Debug\VentsCadLibrary.pdb
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\TestVentsCadLibrary.csprojResolveAssemblyReference.cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\MainWindow.g.cs
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\App.g.cs
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\TestVentsCadLibrary_MarkupCompile.cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\TestVentsCadLibrary_MarkupCompile.lref
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\MainWindow.baml
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\TestVentsCadLibrary.g.resources
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\TestVentsCadLibrary.Properties.Resources.resources
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\TestVentsCadLibrary.csproj.GenerateResource.Cache
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\TestVentsCadLibrary.exe
+C:\Users\kb81.VENTS\Source\Repos\AirVentsOnline2\TestVentsCadLibrary\TestVentsCadLibrary\obj\Debug\TestVentsCadLibrary.pdb

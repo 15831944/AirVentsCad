@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VentsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ConecctorOneC" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HostingWindowsForms" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HostingWindowsForms.Data" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="I1cService_AuthenticationUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticationUser" />
+  </wsdl:message>
+  <wsdl:message name="I1cService_AuthenticationUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticationUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="I1cService_GetClassifierMeasureList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassifierMeasureList" />
+  </wsdl:message>
+  <wsdl:message name="I1cService_GetClassifierMeasureList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetClassifierMeasureListResponse" />
+  </wsdl:message>
+  <wsdl:message name="I1cService_SearchNomenclatureByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchNomenclatureByName" />
+  </wsdl:message>
+  <wsdl:message name="I1cService_SearchNomenclatureByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchNomenclatureByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEpdmService_SearchDoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDoc" />
+  </wsdl:message>
+  <wsdl:message name="IEpdmService_SearchDoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SearchDocResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEpdmService_Bom_InputMessage">
+    <wsdl:part name="parameters" element="tns:Bom" />
+  </wsdl:message>
+  <wsdl:message name="IEpdmService_Bom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEpdmService_GetConfiguration_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="IEpdmService_GetConfiguration_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEpdmService_GetLink_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLink" />
+  </wsdl:message>
+  <wsdl:message name="IEpdmService_GetLink_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLinkResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITaskService_AddTaskList_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTaskList" />
+  </wsdl:message>
+  <wsdl:message name="ITaskService_AddTaskList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTaskListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="I1cService">
+    <wsdl:operation name="AuthenticationUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/I1cService/AuthenticationUser" message="tns:I1cService_AuthenticationUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/I1cService/AuthenticationUserResponse" message="tns:I1cService_AuthenticationUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetClassifierMeasureList">
+      <wsdl:input wsaw:Action="http://tempuri.org/I1cService/GetClassifierMeasureList" message="tns:I1cService_GetClassifierMeasureList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/I1cService/GetClassifierMeasureListResponse" message="tns:I1cService_GetClassifierMeasureList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchNomenclatureByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/I1cService/SearchNomenclatureByName" message="tns:I1cService_SearchNomenclatureByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/I1cService/SearchNomenclatureByNameResponse" message="tns:I1cService_SearchNomenclatureByName_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IEpdmService">
+    <wsdl:operation name="SearchDoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEpdmService/SearchDoc" message="tns:IEpdmService_SearchDoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEpdmService/SearchDocResponse" message="tns:IEpdmService_SearchDoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Bom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEpdmService/Bom" message="tns:IEpdmService_Bom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEpdmService/BomResponse" message="tns:IEpdmService_Bom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetConfiguration">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEpdmService/GetConfiguration" message="tns:IEpdmService_GetConfiguration_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEpdmService/GetConfigurationResponse" message="tns:IEpdmService_GetConfiguration_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLink">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEpdmService/GetLink" message="tns:IEpdmService_GetLink_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEpdmService/GetLinkResponse" message="tns:IEpdmService_GetLink_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ITaskService">
+    <wsdl:operation name="AddTaskList">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITaskService/AddTaskList" message="tns:ITaskService_AddTaskList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITaskService/AddTaskListResponse" message="tns:ITaskService_AddTaskList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_I1cService" type="tns:I1cService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AuthenticationUser">
+      <soap:operation soapAction="http://tempuri.org/I1cService/AuthenticationUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetClassifierMeasureList">
+      <soap:operation soapAction="http://tempuri.org/I1cService/GetClassifierMeasureList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchNomenclatureByName">
+      <soap:operation soapAction="http://tempuri.org/I1cService/SearchNomenclatureByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IEpdmService" type="tns:IEpdmService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SearchDoc">
+      <soap:operation soapAction="http://tempuri.org/IEpdmService/SearchDoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Bom">
+      <soap:operation soapAction="http://tempuri.org/IEpdmService/Bom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetConfiguration">
+      <soap:operation soapAction="http://tempuri.org/IEpdmService/GetConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLink">
+      <soap:operation soapAction="http://tempuri.org/IEpdmService/GetLink" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_ITaskService" type="tns:ITaskService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddTaskList">
+      <soap:operation soapAction="http://tempuri.org/ITaskService/AddTaskList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VentsService">
+    <wsdl:port name="BasicHttpBinding_I1cService" binding="tns:BasicHttpBinding_I1cService">
+      <soap:address location="http://srvkb:8080/VentsService/FirstContract" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IEpdmService" binding="tns:BasicHttpBinding_IEpdmService">
+      <soap:address location="http://srvkb:8080/VentsService/SecondContract" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_ITaskService" binding="tns:BasicHttpBinding_ITaskService">
+      <soap:address location="http://srvkb:8080/VentsService/ThirdContract" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

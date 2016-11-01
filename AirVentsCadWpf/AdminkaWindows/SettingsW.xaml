@@ -1,0 +1,83 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:DataControls="clr-namespace:AirVentsCadWpf.DataControls" x:Class="AirVentsCadWpf.AdminkaWindows.SettingsW"
+        Title="Настройки" Closing="Window_Closing_1" Loaded="Window_Loaded_1" WindowStyle="ToolWindow" HorizontalAlignment="Center" VerticalAlignment="Center" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="SaveSettings" Content="Сохранить" HorizontalAlignment="Right" Height="24" Margin="0,3,3,0" VerticalAlignment="Top" Width="75" Click="SaveSettingsClick" Grid.Row="10" Background="{x:Null}" Grid.ColumnSpan="2"/>
+            <Label x:Name="Developer" Content="Developer" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Grid.Row="6"/>
+            <Label x:Name="TestPdmBaseName" Content="TestPdmBaseName" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Grid.Row="5"/>
+            <Label x:Name="PdmBaseName" Content="PdmBaseName" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Grid.Row="4"/>
+            <Label x:Name="DestinationFolder" Content="DestinationFolder" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Grid.Row="3"/>
+            <Label x:Name="SourceFolder" Content="SourceFolder" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Grid.Row="2"/>
+            <Grid x:Name="DestBase" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="SQLBase" Margin="0" Text="pdmsrv"  Grid.Column="1" MinWidth="50"  VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" IsReadOnly="True" />
+                <Label Grid.Column="0" Content="База" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top"/>
+                <Label Grid.Column="2" Content="UserId" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top"/>
+                <TextBox x:Name="UserId" Margin="0" Text="sa"  Grid.Column="3" MinWidth="25"  VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" IsReadOnly="True" />
+                <Label Grid.Column="4" Content="Pssword" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top"/>
+                <PasswordBox x:Name="pwdBox" Grid.Column="5" Height="20"  Password="P@$$w0rd"/>
+            </Grid>
+            <Grid x:Name="ServiceAdr" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top" Grid.Row="7" Grid.ColumnSpan="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="TestService" Background="{x:Null}" Grid.Column="2" Content="Тест" Margin="2" Click="TestService_Click"></Button>
+                <TextBox x:Name="VentsServiceAddress" Margin="0"  Grid.Column="1" MinWidth="100"  VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" IsReadOnly="False" />
+                <Label Grid.Column="0" Content="Адрес сервиса" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid Grid.Row="0" HorizontalAlignment="Left" Margin="2,2,0,0" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox x:Name="VaultsComboBox" Margin="2" SelectedIndex="0" Grid.Column="1" MaxDropDownHeight="60" MinWidth="80" Initialized="VaultsComboBox_Initialized" VerticalAlignment="Center" HorizontalAlignment="Center" 
+					Background="{x:Null}" LayoutUpdated="VaultsComboBox_LayoutUpdated"/>
+                <Label Grid.Column="0" Content="Рабочее хранилище" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top"/>
+            </Grid>
+            <Button x:Name="ФайлЛоггера" Content="Лог файл" HorizontalAlignment="Left" Height="24" Margin="3,3,0,3" VerticalAlignment="Center"
+				Width="75" Grid.Row="10" Background="{x:Null}" Click="ФайлЛоггера_Click"/>
+            <Grid HorizontalAlignment="Left" Height="Auto" Margin="2" Grid.Row="8"  VerticalAlignment="Top" Width="Auto">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="XML_Path_Txt" Margin="0" MinWidth="80" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" IsReadOnly="False" Grid.Column="1" />
+                <Label x:Name="XML_Path" Content="XML Path" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="Auto" Margin="2" Grid.Row="9"  VerticalAlignment="Top" Width="Auto" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBox x:Name="DXF_Path_Txt" Margin="0" MinWidth="80" VerticalAlignment="Center" HorizontalAlignment="Center" Background="{x:Null}" IsReadOnly="False" Grid.Column="1" />
+                <Label  Content="DXF Path" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Top"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

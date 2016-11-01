@@ -1,0 +1,122 @@
+﻿<UserControl x:Class="AirVentsCadWpf.DataControls.Panel50Uc"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Loaded="UserControl_Loaded_1">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="66"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="66"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="66"/>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Background="#FF8DD3F1"/>
+
+        <Grid HorizontalAlignment="Stretch" Grid.Row="3" VerticalAlignment="Stretch" Background="#FF8DD3F1"/>
+        <Grid Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,-5,0,5"/>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="5" VerticalAlignment="Stretch" Background="#FF8DD3F1"/>
+        <Grid HorizontalAlignment="Stretch"  Grid.Row="6" VerticalAlignment="Stretch"/>
+        <Grid Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="2" Height="Auto">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Margin="2" VerticalAlignment="Top" HorizontalAlignment="Left" Height="Auto" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="65"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="55"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="50"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Label Content="Тип" HorizontalAlignment="Left" VerticalAlignment="Center" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="2" Width="67"/>
+                <ComboBox x:Name="TypeOfPanel50" HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True"
+                          Grid.Row="0" Grid.Column="1" Margin="0" LayoutUpdated="TypeOfPanel50_LayoutUpdated" Width="150" Height="23">
+                    <!--    <ComboBoxItem Content="Несъемная" ToolTip="01"/>
+                    <ComboBoxItem Content="Съемная" ToolTip="04"/>
+                    <ComboBoxItem Content="Панель теплообменника" ToolTip="05"/>
+                    <ComboBoxItem Content="Панель двойная" ToolTip="06"/> -->
+                </ComboBox>
+                <Label Content="Ширина"       HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="0"
+                       Grid.Column="2" HorizontalContentAlignment="Center" Margin="0"/>
+                <TextBox x:Name="WidthPanel" PreviewTextInput="NumberValidationTextBox"  VerticalAlignment="Center"
+                         Grid.Row="0" Grid.Column="3" TextAlignment="Center" Margin="0" HorizontalContentAlignment="Center" KeyDown="WidthPanel_KeyDown" VerticalContentAlignment="Center" Width="50" />
+                <Label Content="Высота"       HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Row="0"
+                       Grid.Column="4" HorizontalContentAlignment="Center" Margin="2"/>
+                <TextBox x:Name="HeightPanel" VerticalAlignment="Center" PreviewTextInput="NumberValidationTextBox"
+                         Grid.Row="0" Grid.Column="5" TextAlignment="Center" Margin="2" HorizontalAlignment="Left" Width="47" HorizontalContentAlignment="Center" KeyDown="HeightPanel_KeyDown" VerticalContentAlignment="Center"/>
+                <Grid Grid.Row="1" Grid.Column="0" x:Name="PanelGrid" Margin="2" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.ColumnSpan="7" Width="Auto" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="35"/>
+                        <RowDefinition Height="35"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Наружная" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Padding="2" Width="70"/>
+                    <Label Content="Внутренняя" Grid.Column="0" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Padding="2" Grid.Row="1" Width="70"/>
+                    <ComboBox x:Name="MaterialP1" Height="23"  HorizontalAlignment="Center" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="1"  VerticalContentAlignment="Center" Margin="2,6" TabIndex="2" Padding="5,3,2,3" Grid.Row="0" Width="148" SelectionChanged="MaterialP1_SelectionChanged" />
+
+                    <ComboBox x:Name="MaterialP2" Height="23" HorizontalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="1" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="0" VerticalAlignment="Center" TabIndex="3" Padding="5,3,2,3" Grid.Row="1" Width="148" SelectionChanged="MaterialP2_SelectionChanged"/>
+                    <Label x:Name="ТолщинаВнешнейLbl" Content="Толщина" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Center" Padding="2"/>
+                    <Label x:Name="ТолщинаВннутреннейLbl" Content="Толщина" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" Margin="2" VerticalAlignment="Center" Padding="2"/>
+                    <ComboBox x:Name="ТолщинаВнешней" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" Grid.Column="3" VerticalContentAlignment="Center" Margin="2" TabIndex="2" Padding="5,3,2,3" Grid.Row="0" Width="50" IsReadOnly="True"/>
+                    <ComboBox x:Name="ТолщинаВннутренней" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="3" VerticalContentAlignment="Center" Margin="2" TabIndex="2" Padding="5,3,2,3" Grid.Row="1" Width="50"/>
+                    <ComboBox x:Name="Ral1" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="4" VerticalContentAlignment="Center" Margin="2" TabIndex="2" Padding="5,3,2,3" Grid.Row="0" Width="100" LayoutUpdated="Ral1_LayoutUpdated" />
+                    <ComboBox x:Name="CoatingType1" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="5" VerticalContentAlignment="Center" Margin="2" TabIndex="2" Padding="5,3,2,3" Grid.Row="0" Width="80"/>
+                    <ComboBox x:Name="CoatingClass1" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="6" VerticalContentAlignment="Center" Margin="2" TabIndex="2" Padding="5,3,2,3" Grid.Row="0" Width="35"/>
+                    <ComboBox x:Name="Ral2" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="4" VerticalContentAlignment="Center" Margin="2" TabIndex="2" Padding="5,3,2,3" Grid.Row="1" Width="100" LayoutUpdated="Ral2_LayoutUpdated" />
+                    <ComboBox x:Name="CoatingType2" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="5" VerticalContentAlignment="Center" Margin="2" TabIndex="2" Padding="5,3,2,3" Grid.Row="1" Width="80"/>
+                    <ComboBox x:Name="CoatingClass2" Height="23"  HorizontalAlignment="Left" VerticalAlignment="Center" SelectedIndex="0" IsReadOnly="True" Grid.Column="6" VerticalContentAlignment="Center" Margin="2" TabIndex="2" Padding="5,3,2,3" Grid.Row="1" Width="35"/>
+                </Grid>
+                <Button x:Name="Build" Content="Построить" HorizontalAlignment="Right" Height="25" Margin="0,3,2,0" VerticalAlignment="Top" Width="100" 
+                        Click="BUILDING_Click" Background="{x:Null}" Grid.Row="0" Grid.Column="6"/>
+            </Grid>
+            <Image x:Name="PicturePanel" HorizontalAlignment="Stretch" MinHeight="150" MaxHeight="250" Margin="2"  MinWidth="150" MaxWidth="250"
+                   Grid.Row="0" Grid.RowSpan="2" Grid.Column="1"/>
+            <Grid Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Height="41" Margin="1,1,0,0" VerticalAlignment="Top" Width="278">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <ComboBox x:Name="TypeOfPanel" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="15" SelectedIndex="1" IsReadOnly="True"
+            		 Margin="2"  Width="Auto" Height="Auto" Grid.Column="1">
+                    <ComboBoxItem Content="30-й профиль" ToolTip="28мм"/>
+                    <ComboBoxItem Content="50-й профиль" ToolTip="48мм"/>
+                    <ComboBoxItem Content="70-й профиль" ToolTip="50мм"/>
+                    <!--<ComboBoxItem Content="Съемная" ToolTip="04"/>
+                    <ComboBoxItem Content="Панель теплообменника" ToolTip="05"/>
+                    <ComboBoxItem Content="Панель двойная" ToolTip="06"/>-->
+                </ComboBox>
+                <Label Grid.Row="0" Grid.Column="0" Content="Панель" Margin="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Height="42" VerticalAlignment="Bottom"/>
+            </Grid>
+        </Grid>
+        <Grid HorizontalAlignment="Stretch" Grid.Row="7" VerticalAlignment="Stretch" Background="#FF8DD3F1"/>
+        <Grid x:Name="GridTypeOfUnit50" Margin="0" Grid.Row="8"/>
+    </Grid>
+</UserControl>
+
+

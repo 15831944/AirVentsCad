@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ConecctorOneC" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ConecctorOneC" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfConnection.ClassifierMeasure">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Connection.ClassifierMeasure" nillable="true" type="tns:Connection.ClassifierMeasure" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConnection.ClassifierMeasure" nillable="true" type="tns:ArrayOfConnection.ClassifierMeasure" />
+  <xs:complexType name="Connection.ClassifierMeasure">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DescriptionFull" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Connection.ClassifierMeasure" nillable="true" type="tns:Connection.ClassifierMeasure" />
+  <xs:complexType name="ArrayOfConnection.Nomenclature">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Connection.Nomenclature" nillable="true" type="tns:Connection.Nomenclature" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConnection.Nomenclature" nillable="true" type="tns:ArrayOfConnection.Nomenclature" />
+  <xs:complexType name="Connection.Nomenclature">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Code" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Connection.Nomenclature" nillable="true" type="tns:Connection.Nomenclature" />
+</xs:schema>

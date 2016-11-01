@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="VentsService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.14.86/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.14.86/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.14.86/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/VentsCadServiceLibrary" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IVentsCadService_Build_InputMessage">
+    <wsdl:part name="parameters" element="tns:Build" />
+  </wsdl:message>
+  <wsdl:message name="IVentsCadService_Build_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuildResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVentsCadService_IsBusy_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsBusy" />
+  </wsdl:message>
+  <wsdl:message name="IVentsCadService_IsBusy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsBusyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVentsCadService_BuildSp_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuildSp" />
+  </wsdl:message>
+  <wsdl:message name="IVentsCadService_BuildSp_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuildSpResponse" />
+  </wsdl:message>
+  <wsdl:message name="IVentsCadService_BuildSpigot_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuildSpigot" />
+  </wsdl:message>
+  <wsdl:message name="IVentsCadService_BuildSpigot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuildSpigotResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IVentsCadService">
+    <wsdl:operation name="Build">
+      <wsdl:input wsam:Action="http://tempuri.org/IVentsCadService/Build" message="tns:IVentsCadService_Build_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IVentsCadService/BuildResponse" message="tns:IVentsCadService_Build_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsBusy">
+      <wsdl:input wsam:Action="http://tempuri.org/IVentsCadService/IsBusy" message="tns:IVentsCadService_IsBusy_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IVentsCadService/IsBusyResponse" message="tns:IVentsCadService_IsBusy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuildSp">
+      <wsdl:input wsam:Action="http://tempuri.org/IVentsCadService/BuildSp" message="tns:IVentsCadService_BuildSp_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IVentsCadService/BuildSpResponse" message="tns:IVentsCadService_BuildSp_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuildSpigot">
+      <wsdl:input wsam:Action="http://tempuri.org/IVentsCadService/BuildSpigot" message="tns:IVentsCadService_BuildSpigot_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IVentsCadService/BuildSpigotResponse" message="tns:IVentsCadService_BuildSpigot_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IVentsCadService" type="tns:IVentsCadService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Build">
+      <soap:operation soapAction="http://tempuri.org/IVentsCadService/Build" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsBusy">
+      <soap:operation soapAction="http://tempuri.org/IVentsCadService/IsBusy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuildSp">
+      <soap:operation soapAction="http://tempuri.org/IVentsCadService/BuildSp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuildSpigot">
+      <soap:operation soapAction="http://tempuri.org/IVentsCadService/BuildSpigot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VentsService">
+    <wsdl:port name="BasicHttpBinding_IVentsCadService" binding="tns:BasicHttpBinding_IVentsCadService">
+      <soap:address location="http://192.168.14.86/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

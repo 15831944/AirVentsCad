@@ -1,0 +1,2 @@
+D:\Vlad\AirVentsCad\VentsCadLibrary\obj\Release\VentsCadLibrary.csprojResolveAssemblyReference.cache
+D:\Vlad\AirVentsCad\VentsCadLibrary\obj\Release\VentsCadLibrary.csproj.ResolveComReference.cache

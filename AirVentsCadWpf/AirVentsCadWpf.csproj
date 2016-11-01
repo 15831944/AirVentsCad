@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4A03F4CD-8E2A-4600-B89C-782ADCC67E44}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AirVentsCadWpf</RootNamespace>
+    <AssemblyName>AirVentsCad</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>\\pdmsrv\SolidWorks Admin\AirVentsCAD\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>AirVentsCad</ProductName>
+    <PublisherName>Vents</PublisherName>
+    <ApplicationRevision>83</ApplicationRevision>
+    <ApplicationVersion>2.0.4.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>false</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\AirVentsCad.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisIgnoreGeneratedCode>false</CodeAnalysisIgnoreGeneratedCode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AHU Selection\br_icon_teaser_cad_sr_pos_150%281%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>19126F5A9984D9A90779A1E86E26E7258EA3894E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AirVentsCadWpf_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Reference Include="BomPartList">
+      <HintPath>..\..\BomPartList\BomPartList\bin\Debug\BomPartList.dll</HintPath>
+    </Reference>
+    <Reference Include="Excel, Version=2.1.2.3, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Documents\Visual Studio 2015\Projects\GetSpecFromExcel\SpecFromExcel\bin\Debug\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="MakeDxfUpdatePartData, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Projects VS2012\MakeDxfUpdatePartData\MakeDxfUpdatePartData\bin\Debug\MakeDxfUpdatePartData.dll</HintPath>
+    </Reference>
+    <Reference Include="SolidWorks.Interop.sldworks">
+      <HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\api\redist\SolidWorks.Interop.sldworks.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SolidWorks.Interop.swcommands">
+      <HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\api\redist\SolidWorks.Interop.swcommands.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SolidWorks.Interop.swconst">
+      <HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\api\redist\SolidWorks.Interop.swconst.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="SolidWorks.Interop.swdocumentmgr">
+      <HintPath>C:\Program Files\SOLIDWORKS Corp\SOLIDWORKS\api\redist\SolidWorks.Interop.swdocumentmgr.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\System.Windows.Controls.Input.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Layout.Toolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\System.Windows.Controls.Layout.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="VentsCadLibrary">
+      <HintPath>..\VentsCadLibrary\bin\Debug\VentsCadLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="VentsMaterials, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\VentsMaterials.dll</HintPath>
+    </Reference>
+    <Reference Include="VentsPDM-dll">
+      <HintPath>..\..\..\..\..\Desktop\VentsPDM-dll.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.14.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.14\lib\net\WpfAnimatedGif.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WPFTextBoxAutoComplete">
+      <HintPath>..\packages\WPFTextBoxAutoComplete.1.0.0\lib\net40\WPFTextBoxAutoComplete.dll</HintPath>
+    </Reference>
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WPFToolkit.3.5.50211.1\lib\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AdminkaWindows\Adminka.xaml.cs">
+      <DependentUpon>Adminka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminkaWindows\SettingsW.xaml.cs">
+      <DependentUpon>SettingsW.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AirVentsClasses\Totals.cs" />
+    <Compile Include="AirVentsClasses\SQLBaseData2.cs" />
+    <Compile Include="AirVentsClasses\GenerateUnitNames.cs" />
+    <Compile Include="AirVentsClasses\SQLBaseData.cs" />
+    <Compile Include="AirVentsClasses\SwDocMgr.cs" />
+    <Compile Include="AirVentsClasses\UnitsBuilding\Aattachments.cs" />
+    <Compile Include="AirVentsClasses\UnitsBuilding\FramelessBlock.cs" />
+    <Compile Include="AirVentsClasses\UnitsBuilding\FrameLessUI.cs" />
+    <Compile Include="AirVentsClasses\UnitsBuilding\FrameLessPanel.cs" />
+    <Compile Include="AirVentsClasses\UnitsBuilding\GenerateUnit50.cs" />
+    <Compile Include="DataControls\Specification\01-MonoBlock50.xaml.cs">
+      <DependentUpon>01-MonoBlock50.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\AirVentsUnits50Uc.xaml.cs">
+      <DependentUpon>AirVentsUnits50Uc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\Bom.xaml.cs">
+      <DependentUpon>Bom.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\FrameLessUnit\FramelessUnitUc.xaml.cs">
+      <DependentUpon>FramelessUnitUc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\Loggers\LoggerUc.xaml.cs">
+      <DependentUpon>LoggerUc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\OrdersUc.xaml.cs">
+      <DependentUpon>OrdersUc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\PartsListUc.xaml.cs">
+      <DependentUpon>PartsListUc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\DamperUC.xaml.cs">
+      <DependentUpon>DamperUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\GenerateUnit50Control.xaml.cs">
+      <DependentUpon>GenerateUnit50Control.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminkaWindows\GroupUserControl.xaml.cs">
+      <DependentUpon>GroupUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\MontageFrameUC.xaml.cs">
+      <DependentUpon>MontageFrameUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\Panel50UC.xaml.cs">
+      <DependentUpon>Panel50UC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\RoofUC.xaml.cs">
+      <DependentUpon>RoofUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\Specification\BomFormat.cs" />
+    <Compile Include="DataControls\Specification\SpecificationBomUc.xaml.cs">
+      <DependentUpon>SpecificationBomUc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\SpigotUC.xaml.cs">
+      <DependentUpon>SpigotUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\Unit50Uc.xaml.cs">
+      <DependentUpon>Unit50Uc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\UnitElement.xaml.cs">
+      <DependentUpon>UnitElement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\Units50Uc.xaml.cs">
+      <DependentUpon>Units50Uc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\Specification\SpecificationUc.xaml.cs">
+      <DependentUpon>SpecificationUc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataControls\ForConstructors\ForConstructorsUC.xaml.cs">
+      <DependentUpon>ForConstructorsUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\VentsCadService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceVents\ServiceVents.cs" />
+    <Compile Include="Switcher.cs" />
+    <Compile Include="UserControlEdr.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlEdr.Designer.cs">
+      <DependentUpon>UserControlEdr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Логирование\Логгер.cs" />
+    <Page Include="AdminkaWindows\Adminka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminkaWindows\SettingsW.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\Specification\01-MonoBlock50.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\AirVentsUnits50Uc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\Bom.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\FrameLessUnit\FramelessUnitUc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\Loggers\LoggerUc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\OrdersUc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\PartsListUc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\DamperUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\GenerateUnit50Control.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminkaWindows\GroupUserControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\MontageFrameUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\Panel50UC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\RoofUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\Specification\SpecificationBomUc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\Unit50Uc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\UnitElement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\Units50Uc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\Specification\SpecificationUc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DataControls\ForConstructors\ForConstructorsUC.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MenuControls\AuthenticatedUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MenuControls\MenuTree.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DataControls\SpigotUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MenuControls\AuthenticatedUC.xaml.cs">
+      <DependentUpon>AuthenticatedUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MenuControls\MenuTree.xaml.cs">
+      <DependentUpon>MenuTree.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="UserControlEdr.resx">
+      <DependentUpon>UserControlEdr.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AirVentsCadWpf_1_TemporaryKey.pfx" />
+    <None Include="Properties\DataSources\HostingWindowsForms.EPDM.datasource" />
+    <None Include="Service References\VentsCadService\AirVentsCadWpf.VentsCadService.BuildSpigotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="AirVentsCadWpf_TemporaryKey.pfx" />
+    <None Include="Service References\VentsCadService\AirVentsCadWpf.VentsCadService.ProductPlace.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\VentsCadService\VentsService1.wsdl" />
+    <Resource Include="DataControls\Pictures\Бескаркасная установка\01 - Frameless Design 40mm - 01.JPG" />
+    <Resource Include="DataControls\Pictures\Бескаркасная установка\01 - Frameless Design 40mm - 02.JPG" />
+    <Resource Include="DataControls\Pictures\Бескаркасная установка\01 - Frameless Design 40mm - 03.JPG" />
+    <Resource Include="DataControls\Pictures\Монтажная рама\10-4-800-1000-03.png" />
+    <Resource Include="DataControls\Pictures\Монтажная рама\10-4-800-650-01.png" />
+    <Resource Include="DataControls\Pictures\Монтажная рама\10-4-800-650-02.png" />
+    <Resource Include="DataControls\Pictures\Монтажная рама\10-4-800-650.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="AHU Selection\topmenu_icon1.png" />
+    <Resource Include="AHU Selection\topmenu_icon2.png" />
+    <Resource Include="AHU Selection\topmenu_icon3.png" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\DataSources\BomPartList.BomPartListClass.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AHU Selection\topmenu_icon1.gif" />
+    <Resource Include="AHU Selection\topmenu_icon2.gif" />
+    <Resource Include="AHU Selection\topmenu_icon3.gif" />
+    <Resource Include="AHU Selection\ventus1.jpg" />
+    <Resource Include="AHU Selection\ventusN1.jpg" />
+    <Resource Include="AHU Selection\ventusS1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AHU Selection\br_icon_teaser_cad_sr_pos_150%281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DataControls\Pictures\Крыша\15-01-800-1100.JPG" />
+    <Resource Include="DataControls\Pictures\Крыша\15-02-800-1100.JPG" />
+    <Resource Include="DataControls\Pictures\Крыша\15-03-800-1100.JPG" />
+    <Resource Include="DataControls\Pictures\Крыша\15-04-800-1100.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="DataControls\Pictures\Панели\02-01-1000-750-50-Az-Az-MW.JPG" />
+    <Resource Include="DataControls\Pictures\Панели\02-01-500-750-50-Az-Az-MW.JPG" />
+    <Resource Include="DataControls\Pictures\Панели\02-04-500-750-50-Az-Az-MW.JPG" />
+    <Resource Include="DataControls\Pictures\Панели\02-05-500-750-50-Az-Az-MW.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\VentsCadService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\VentsCadService\item.disco" />
+    <None Include="Service References\VentsCadService\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VentsCadService\item1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VentsCadService\item2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\VentsCadService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\VentsCadService\configuration.svcinfo" />
+    <None Include="Service References\VentsCadService\configuration91.svcinfo" />
+    <Resource Include="DataControls\Pictures\loading.gif" />
+    <Resource Include="DataControls\Pictures\button_cancel.png" />
+    <Resource Include="DataControls\Pictures\cancel.JPG" />
+    <Resource Include="DataControls\Pictures\Empty.JPG" />
+    <Content Include="Libraries\VentsPDM-dll.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ExportPartData\ExportPartData\ExportPartData.csproj">
+      <Project>{1b9acb92-bd12-4413-b4b9-0471bb359142}</Project>
+      <Name>ExportPartData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CorPortalWcfService\HostingWindowsForms\HostingWindowsForms.csproj">
+      <Project>{f634d017-b7e4-4a08-af7d-1bdbea2f8af2}</Project>
+      <Name>HostingWindowsForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PdmAsmBomToXml\PdmAsmBomToXml.csproj">
+      <Project>{ebdbce42-efa5-48bd-a0e0-e0f5bcf3ec95}</Project>
+      <Name>PdmAsmBomToXml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

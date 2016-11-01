@@ -1,0 +1,4 @@
+D:\Vlad\AirVentsCad\VentsCadService\obj\Release\VentsCadService.csprojResolveAssemblyReference.cache
+D:\Vlad\AirVentsCad\VentsCadService\obj\Release\VentsCadService.Form1.resources
+D:\Vlad\AirVentsCad\VentsCadService\obj\Release\VentsCadService.Properties.Resources.resources
+D:\Vlad\AirVentsCad\VentsCadService\obj\Release\VentsCadService.csproj.GenerateResource.Cache

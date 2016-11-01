@@ -1,0 +1,59 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="AirVentsCadWpf.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="UserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ConnectionToSQL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=pdmsrv;Initial Catalog=SWPlusDB;Persist Security Info=True;User ID=sa;Password=P@$$w0rd;MultipleActiveResultSets=True</Value>
+    </Setting>
+    <Setting Name="SourceFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Vents-PDM</Value>
+    </Setting>
+    <Setting Name="DestinationFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Vents-PDM</Value>
+    </Setting>
+    <Setting Name="Domain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vents.local</Value>
+    </Setting>
+    <Setting Name="PdmBaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Vents-PDM</Value>
+    </Setting>
+    <Setting Name="TestPdmBaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Vents-PDM</Value>
+    </Setting>
+    <Setting Name="Developer" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WorkingSqlConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;SWPlusDB&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">SWPlusDB</Value>
+    </Setting>
+    <Setting Name="TestSqlConnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;DB-Tes&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">DB-Tes</Value>
+    </Setting>
+    <Setting Name="VaultSystemType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="ServiceAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost/</Value>
+    </Setting>
+    <Setting Name="DXFPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\pdmsrv\DXF</Value>
+    </Setting>
+    <Setting Name="XMLPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\pdmsrv\XML</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

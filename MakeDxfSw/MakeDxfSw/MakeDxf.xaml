@@ -1,0 +1,13 @@
+﻿<Window x:Class="MakeDxfSw.MakeDxf"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MakeDxfSw"
+        mc:Ignorable="d"
+        Title="MakeDxf" Height="100" Width="200" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="button" Content="DXF" FontSize="25" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Stretch" Width="Auto" Background="{x:Null}" Height="50" Click="button_Click"/>
+
+    </Grid>
+</Window>
